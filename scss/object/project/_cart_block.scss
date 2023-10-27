@@ -1,0 +1,1365 @@
+//==============================
+//
+//		_p-theme
+//
+//==============================
+@use "../../foundation/mixin";
+
+//==============================
+//		PC + SP
+//==============================
+.p-theme {}
+
+.shun_block .txt_red {
+	color: #c30d22;
+}
+
+//==============================
+//		PC
+//==============================
+@media #{mixin.$break_point_pc} {
+	/* --------------------------------------
+			ご好評につき完売いたしました／まもなくご予約開始
+	-------------------------------------- */
+	.cart_block .tab_containner.shun_02 {
+		border: none;
+		box-shadow: 0px 8px 16px -2px rgb(10 10 10 / 10%), 0px 0px 0px 1px rgb(10 10 10 / 2%);
+		background-color: #fff;
+		padding: 30px 48px;
+	}
+	
+	.cart_block .tab_containner.shun_02 .lineup_detail_btn_01 label {
+		background-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun_02 .lineup_detail_btn_01--pottage label {
+		background-color: #ac7c44;
+	}
+	
+	.cart_block .information_box .box_lr {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.cart_block .information_box .box_l {
+		width: 40%;
+	}
+	
+	.cart_block .information_box .box_r {
+		width: 444px;
+		height: fit-content;
+	}
+	
+	.cart_block .information_box .reservation_area {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		border: 5px solid #C9A063;
+		background-color: #ffffff;
+	}
+	
+	.cart_block .information_box .reservation_area .txt {
+		display: block;
+		position: absolute;
+		right: 50%;
+		bottom: 50%;
+		z-index: 2;
+		transform: translate(50%, 50%);
+		width: 100%;
+		color: #7F4F21;
+		font-size: 2.6rem;
+		font-weight: 600;
+		text-align: center;
+	}
+	
+	.cart_block .information_box .reservation_area .txt .guidance {
+		font-size: 1.5rem;
+		font-weight: normal;
+	}
+
+	.cart_block .information_box .reservation_area .txt .scheduled_to {
+		font-size: 2.2rem;
+	}
+
+	.cart_block .information_box .reservation_area .img {
+		display: block;
+		position: absolute;
+		right: 50%;
+		bottom: 50%;
+		z-index: 1;
+		transform: translate(50%, 50%);
+	}
+	
+	.cart_block .information_box .explanation_area {
+		line-height: 1.6;
+	}
+	
+	.cart_block .information_box .explanation_area .join_container {
+		margin-top: 20px;
+	}
+	
+	.cart_block .information_box .explanation_area .join_container .title+.txt {
+		margin-top: 20px;
+	}
+	
+	.cart_block .information_box .explanation_area .join_container .txt_underline {
+		text-align: center;
+		background-image: linear-gradient(0deg, #c7ba8c 2px, transparent 1px); /* 罫線の色と太さ  */
+		background-size: 100% 2em;
+		line-height: 2em;
+	}
+	
+	.cart_block .information_box .explanation_area .join_container .txt .txt__big {
+		font-size: 130%;
+	}
+	
+	.cart_block .information_box_btn {
+		position: relative;
+		width: 100%;
+		height: 78px;
+		margin-top: 50px;
+	}
+	
+	.cart_block .information_box_btn .lineup_detail_btn_01 {
+		position: absolute;
+		width: 380px;
+		right: 50%;
+		bottom: 50%;
+		transform: translate(50%, 50%);
+	}
+	
+	.cart_block .information_box_btn .lineup_detail_btn_01 label::before {
+		content: none;
+	}
+	
+	.cart_block .information_box_btn .lineup_detail_btn_01--pottage {
+		width: 500px;
+	}
+	
+	/* --------------------------------------
+			商品詳細 カート部分
+	-------------------------------------- */
+	.cart_section {
+	}
+
+	.cart_section-yasaidashi{
+		background: url(/shared/img/lineup/yasaidashi/bg_img_01.png);
+		background-repeat: repeat;
+		margin-top: 0 !important;
+		padding: 80px 0 50px;
+	}
+	
+	.cart_section .block {
+		margin-top: 30px;
+	}
+	
+	.cart_block {
+		margin-top: 40px;
+	}
+	
+	.cart_block .tab_menu {
+		display: flex;
+		justify-content: flex-start;
+		font-size: 2.6rem;
+	}
+	
+	.cart_block .tab_menu .tab_title {
+		padding: 10px 40px;
+		color: #FFFFFF;
+		border-radius: 10px 10px 0 0;
+		cursor: pointer;
+	}
+	
+	.cart_block .tab_menu .tab_title:not(.active) {
+		margin: 4px;
+		/* background: #C30D23 !important; */
+	}
+	
+	.cart_block .tab_menu .tab_title:hover {
+		opacity: 0.8;
+	}
+	
+	/* タブメニュー 定期 */
+	.cart_block .tab_menu .tab_title.regular {
+		background: #23ac38;
+	}
+	
+	/* タブメニュー 都度買い */
+	.cart_block .tab_menu .tab_title.once {
+		background: #C30D23;
+	}
+	
+	/* タブメニュー 旬 */
+	.cart_block .tab_menu .tab_title.shun {
+		background: #EA5514;
+	}
+	
+	.cart_block .tab_containner {
+		box-sizing: border-box;
+		/* padding: 30px 48px; */
+		border: 4px solid;
+	}
+	
+	.cart_block .tab_containner:not(.active) {
+		display: none;
+	}
+	
+	.cart_block .tab_heading {
+		font-size: 2.6rem;
+		text-align: center;
+		background-color: #ffffff;
+		border-bottom: 4px solid;
+		line-height: 1.4;
+	}
+	
+	.cart_block .tab_heading .tab_heading_inner {
+		padding: 30px 48px;
+	}
+	
+	.cart_block .tab_heading.tab_heading-txt_left {
+		text-align: left;
+		width: 100%;
+	}
+	
+	.cart_block .tab_heading.tab_heading-txt_left .tab_heading_inner {
+		position: relative;
+	}
+	
+	.cart_block .tab_heading.tab_heading-txt_left .category_name {
+		font-size: 2rem;	
+	}
+	.cart_block .tab_heading.tab_heading-txt_left .selected_course_once {
+		position: absolute;
+		top: 50%;
+		right: 48px;
+		transform: translateY(-50%);
+	}
+
+	.cart_block .tab_containner-yasaidashi .tab_heading .tab_heading_inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.cart_block .tab_containner-yasaidashi .tab_heading .tab_heading_inner .tab_free{
+		font-size: 2rem;
+		background: #C30D23;
+		color: #fff;
+		padding: 3px 3px;
+	}
+	
+	.cart_block .tab_heading span {
+		margin-left: 20px;
+		font-size: 2rem;
+	}
+	
+	.cart_block .tab_body .tab_body_inner {
+		padding: 30px 48px;
+	}
+	
+	.cart_block .box_lr {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		min-height: 217px;
+	}
+	
+	/* box_l */
+	.cart_block .box_l {
+		display: flex;
+		justify-content: space-between;
+		width: 49%;
+	}
+	
+	.cart_block .box_l .item_img {
+		width: calc(100% - 226px);
+	}
+	
+	.cart_block .box_l .item_img img {
+		border-radius: 15px;
+		width: 158px;
+	}
+	
+	.cart_block .box_l .item_img .unit_price {
+		margin-top: 0.5em;
+		font-size: 1.5rem;
+		text-align: left;
+	}
+	
+	.cart_block .box_l .price_area {
+		width: 226px;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 .item_quantity {
+		position: relative;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 .item_quantity .quantity_outer {
+		display: block;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 .item_quantity .quantity_outer::after {
+		content: "";
+		position: absolute;
+		background: url(/shared/img/lineup/common/detail/cart_arrow_02.png) no-repeat;
+		width: 30px;
+		height: 30px;
+		top: 9px;
+		right: 15px;
+		pointer-events: none;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 select {
+		width: 226px;
+		height: 50px;
+		border-radius: 14px;
+		border: 4px solid #e9d7a7;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		font-size: 1.8rem;
+		background: #FFFFFF;
+	}
+	
+	.cart_block .box_l .price_container {
+		line-height: 1.3;
+		text-align: right;
+		margin-top: 10px;
+	}
+	
+	.cart_block .box_l .price_container .yen {
+		font-weight: bold;
+		width: 260px;
+		text-align: center;
+	}
+	
+	.cart_block .box_l .price_container .yen .price_one_notax {
+		color: #C30D23;
+		font-size: 4.2rem;
+	}
+	
+	.cart_block .box_l .price_container .bulk_buy {
+		display: inline-block;
+		padding: 4px 26px;
+		border-radius: 10px;
+		border: 2px solid #C30D23;
+		background: #FFFFFF;
+		color: #C30D23;
+		margin-top: 10px;
+		font-weight: bold;
+		font-size: 1.56rem;
+	}
+	
+	.cart_block .box_l .price_container .price_2column {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.cart_block .box_l .price_container .price_2column .tax {
+		font-size: 1.5rem;
+	}
+	
+	/* box_r */
+	.cart_block .box_r {
+		width: 48%;
+		position: relative;
+	}
+	
+	.cart_block .lineup_detail_btn_01 {
+		font-size: 2rem;
+	}
+	
+	.cart_block .lineup_detail_btn_01 input {
+		display: none;
+	}
+	
+	.cart_block .lineup_detail_btn_01 label {
+		color: #FFFFFF;
+		border-radius: 10px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		line-height: 1.5;
+		position: relative;
+		cursor: pointer;
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+	}
+	
+	.cart_block .lineup_detail_btn_01 label:hover {
+		opacity: 0.8;
+	}
+	
+	.cart_block .lineup_detail_btn_01 label::before {
+		content: "";
+		background: url(/shared/img/lineup/common/detail-v2/cart_icon_01.png) no-repeat;
+		background-size: 100%;
+		width: 35px;
+		height: 33px;
+		position: absolute;
+		left: 24px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.cart_block .lineup_detail_btn_01 label::after {
+		content: "";
+		background: url(/shared/img/lineup/common/detail-v2/cart_arrow_01.png) no-repeat;
+		background-size: 100%;
+		width: 27px;
+		height: 27px;
+		position: absolute;
+		right: 24px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.cart_block .lineup_detail_great_value {
+		padding: 15px 20px;
+		border: 4px solid;
+		border-radius: 15px;
+		position: relative;
+		margin-top: 25px;
+		background: #FFFFFF;
+		position: absolute;
+		top: 70px;
+		left: auto;
+		right: auto;
+	}
+	
+	.cart_block .lineup_detail_great_value::before,
+	.cart_block .lineup_detail_great_value::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		margin: auto;
+	}
+	
+	.cart_block .lineup_detail_great_value::before {
+		border-style: solid;
+		border-color: transparent transparent #000000 transparent;
+		border-width: 0px 16px 20px 16px;
+		top: -20px;
+	}
+	
+	.cart_block .lineup_detail_great_value::after {
+		border-style: solid;
+		border-color: transparent transparent #FFFFFF transparent;
+		border-width: 0px 12px 15px 12px;
+		top: -15px;
+	}
+	
+	.cart_block .lineup_detail_great_value .great_value_main {
+		font-size: 2rem;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	.cart_block .lineup_detail_great_value .great_value_main .great_value_price {
+		color: #C30D23;
+		font-size: 2.4rem;
+	}
+	
+	.cart_block .tab_containner .lineup_detail_great_value::after {
+		border-color: transparent transparent #FFFFFF transparent;
+	}
+	
+	.cart_block .note_list {
+		padding-top: 10px;
+	}
+	
+	.cart_block .d_cart-note {
+		position: absolute;
+		top: 80px;
+		left: auto;
+		right: auto;
+	}
+	
+	.cart_block .popup_box {
+		display: flex;
+		margin-top: 10px;
+	}
+	
+	.cart_block .popup_box.column_two {
+		justify-content: space-between;
+	}
+	
+	.cart_block .popup_box .lineup_detail_btn_02 {
+		min-width: 400px;
+	}
+	
+	.cart_block .popup_box.column_one {
+		justify-content: center;
+	}
+	
+	.cart_block .lineup_detail_btn_02 a {
+		text-align: center;
+		border: 2px solid #bf916b;
+		background: #FFFFFF;
+		padding: 12px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		display: block;
+		position: relative;
+	}
+	
+	.cart_block .lineup_detail_btn_02 a::after {
+		content: "";
+		position: absolute;
+		background: url(/shared/img/lineup/common/detail/cart_icon_02.png) no-repeat;
+		width: 26px;
+		height: 26px;
+		right: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+	}
+	
+	.cart_block .lineup_detail_btn_02 a:hover {
+		background: #ffe28c;
+		opacity: 1;
+	}
+	
+	/* ---- regular（定期）用 ---- */
+	.cart_block .tab_containner.regular {
+		background-image: url(/shared/img/lineup/common/detail-v2/cart_bg_03.png);
+		border-color: #23ac38;
+	}
+	
+	.cart_block .tab_containner.regular .tab_heading {
+		border-color: #23ac38;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01 label {
+		background: #07913a;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_great_value {
+		border-color: #23ac38;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_great_value::before {
+		border-color: transparent transparent #03a84d transparent;
+	}
+	
+	/* once(都度買い）用 */
+	.cart_block .tab_containner.once {
+		background-image: url(/shared/img/lineup/common/detail-v2/cart_bg_02.png);
+		background-size: 100% auto;
+		border-color: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .tab_heading {
+		border-color: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .lineup_detail_btn_01 label {
+		background: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .lineup_detail_great_value {
+		border-color: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .lineup_detail_great_value::before {
+		border-color: transparent transparent #C30D23 transparent;
+	}
+	
+	/* ---- shun（旬）用 ---- */
+	.cart_block .tab_containner.shun {
+		background-image: url(/shared/img/lineup/common/detail-v2/cart_bg_01.png);
+		background-size: 100% auto;
+		border-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .tab_heading {
+		border-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .lineup_detail_btn_01 label {
+		background-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .lineup_detail_great_value {
+		border-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .lineup_detail_great_value::before {
+		border-color: transparent transparent #EA5514 transparent;
+	}
+	
+	/* ---- 単品用 ---- */
+	.cart_block.single_block .box_conts .box_lr {
+		min-height: 190px;
+	}
+	
+	.cart_block.single_block .box_conts .box_lr:nth-of-type(n + 2) {
+		border-top: 1px dashed;
+		border-color: #C30D23;
+		margin-top: 20px;
+		padding-top: 20px;
+	}
+	
+	.cart_block.single_block .box_l .merchandise_container .name {
+		margin: 10px 0 0;
+		font-size: 2.0rem;
+		font-weight: bold;
+	}
+	
+	.cart_block.single_block .box_l .merchandise_container .txt {
+		margin: 10px 0 0;
+		font-size: 1.5rem;
+	}
+	
+	/* ---- 完売 ---- */
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label {
+		background: #a2a2a2;
+		margin-top: 8px;
+		box-shadow: none;
+		cursor: default;
+		pointer-events: none;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label::before,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label::before,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label::before,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label::before {
+		content: none;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label::after,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label::after,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label::after,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label::after {
+		content: none;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label:hover,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label:hover,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label:hover,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label:hover {
+		opacity: 1;
+	}
+	
+	.shun_block {
+		margin-top: 75px;
+	}
+	.shun_block .shun_heading .title {
+		text-align: center;
+	}
+	.shun_block .shun_body {
+		margin-top: 30px;
+	}
+
+	/* ---- 角丸用 ---- */
+	.tab_containner_round {
+		border-radius: 15px;
+	}
+	
+	/* banner_block */
+	.banner_block .banner {
+		text-align: center;
+	}
+	
+	.banner_block .banner+.banner {
+		margin-top: 40px;
+	}
+	
+	/*  ingredients_block */
+	.ingredients_block .lineup_detail_accordion_1st {
+		border: 2px solid #bf916b;
+		padding-bottom: 0;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_heading {
+		justify-content: center;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container {
+		line-height: 1.4;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container+.accordion_container {
+		margin-top: 20px;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container .accordion_note {
+		font-size: 1.4rem;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container .accordion_note a {
+		text-decoration: underline;
+		text-decoration-color: #310000;
+		font-weight: bold;
+	}
+}
+
+
+
+//==============================
+//		TAB
+//==============================
+// @media #{mixin.$break_point_tab}{
+// }
+
+
+
+
+//==============================
+//		SP
+//==============================
+@media #{mixin.$break_point_sp} {
+	/* --------------------------------------
+			ご好評につき完売いたしました／まもなくご予約開始
+	-------------------------------------- */
+	.cart_block .tab_containner.shun_02 {
+		border: none;
+		box-shadow: 0px 8px 16px -2px rgb(10 10 10 / 10%), 0px 0px 0px 1px rgb(10 10 10 / 2%);
+		background-color: #fff;
+		padding: 20px 3%;
+	}
+	
+	.cart_block .tab_containner.shun_02 .lineup_detail_btn_01 label {
+		background-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun_02 .lineup_detail_btn_01--pottage label {
+		background-color: #ac7c44;
+	}
+	
+	.cart_block .information_box .reservation_area {
+		position: relative;
+		width: 100%;
+		padding: 10% 5%;
+		border-radius: 10px;
+		border: 5px solid #C9A063;
+		background-color: #ffffff;
+	}
+	
+	.cart_block .information_box .reservation_area .txt {
+		display: block;
+		position: absolute;
+		right: 50%;
+		bottom: 50%;
+		transform: translate(50%, 50%);
+		width: 100%;
+		font-size: 2.5rem;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.cart_block .information_box .reservation_area .txt .guidance {
+		font-size: 1.5rem;
+		font-weight: normal;
+	}
+
+	.cart_block .information_box .reservation_area .txt .scheduled_to {
+		font-size: 2rem;
+	}
+
+	.cart_block .information_box .reservation_area .img {
+		display: block;
+		width: 60%;
+		margin: auto;
+	}
+	
+	.cart_block .information_box .reservation_area .img {
+		display: block;
+		width: 60%;
+		margin: auto;
+	}
+	
+	.cart_block .information_box .reservation_area .txt.reservation {
+		color: #c03105;
+	}
+	
+	.cart_block .information_box .explanation_area {
+		line-height: 1.6;
+	}
+	
+	.cart_block .information_box .explanation_area .join_container {
+		margin-top: 10px;
+	}
+	
+	.cart_block .information_box .explanation_area .join_container .title+.txt {
+		margin-top: 5px;
+	}
+	
+	.cart_block .information_box .explanation_area .join_container .txt_underline {
+		text-align: center;
+		background-image: linear-gradient(0deg, #c7ba8c 1px, transparent 1px); /* 罫線の色と太さ  */
+		background-size: 100% 2em;
+		line-height: 2em;
+	}
+	
+	.cart_block .information_box_btn {
+		position: relative;
+		width: 100%;
+		height: 58px;
+		margin-top: 5%;
+	}
+	
+	.cart_block .information_box_btn .lineup_detail_btn_01 {
+		position: absolute;
+		width: 100%;
+	}
+	
+	.cart_block .information_box_btn .lineup_detail_btn_01 label {
+		justify-content: start;
+		padding-left: 1em;
+		min-height: 50px;
+	}
+	.cart_block .information_box_btn .lineup_detail_btn_01 label::before {
+		content: none;
+	}
+	
+	/* --------------------------------------
+			商品詳細 カート部分
+	-------------------------------------- */
+	.cart_section {
+		// padding-bottom: 30px;
+	}
+
+	.cart_section-yasaidashi{
+		background: url(/shared/img/lineup/yasaidashi/bg_img_01.png);
+		background-repeat: repeat;
+		margin-top: 0 !important;
+		padding: 20px 0 35px;
+	}
+
+	.cart_block_title{
+		margin-top: 30px;
+	}
+	
+	.cart_section .block {
+		margin-top: 30px;
+	}
+
+	.cart_section .cart_block_title + .block{
+		margin-top: 20px;
+	}
+	
+	.cart_block .tab_menu {
+		display: flex;
+		justify-content: flex-start;
+		font-size: 1.8rem;
+		width: 100%;
+	}
+	
+	.cart_block .tab_menu .tab_title {
+		padding: 16px 4%;
+		color: #FFFFFF;
+		border-radius: 10px 10px 0 0;
+		cursor: pointer;
+		width: 49%;
+		font-size: 4.2vw;
+	}
+	
+	.cart_block .tab_menu .tab_title:not(.active) {
+		margin: 4px;
+		/* background: #C30D23 !important; */
+	}
+	
+	/* タブメニュー 定期 */
+	.cart_block .tab_menu .tab_title.regular {
+		background: #23ac38;
+	}
+	
+	/* タブメニュー 都度買い */
+	.cart_block .tab_menu .tab_title.once {
+		background: #C30D23;
+	}
+	
+	/* タブメニュー 旬 */
+	.cart_block .tab_menu .tab_title.shun {
+		background: #EA5514;
+	}
+	
+	.cart_block .tab_containner {
+		box-sizing: border-box;
+		border: 2px solid;
+	}
+	
+	.cart_block .tab_containner:not(.active) {
+		display: none;
+	}
+	
+	.cart_block .tab_heading {
+		padding: 20px 3%;
+		background-color: #ffffff;
+		font-size: 2.6rem;
+		text-align: center;
+		border-bottom: 2px solid;
+		line-height: 1.4;
+	}
+	
+	.cart_block .tab_heading span {
+		font-size: 2rem;
+		display: inline-block;
+	}
+
+	.cart_block .tab_containner-yasaidashi .tab_heading .tab_heading_inner .tab_free{
+		font-size: 2rem;
+		background: #C30D23;
+		color: #fff;
+		padding: 3px 3px;
+		display: inline-block;
+		margin-left: 20px;
+	}
+	
+	.cart_block .tab_body .tab_body_inner {
+		padding: 20px 3%;
+	}
+	
+	/* box_l */
+	.cart_block .box_l {
+		display: flex;
+		width: 100%;
+	}
+	
+	.cart_block .box_l .item_img {
+		width: 30%;
+	}
+	
+	.cart_block .box_l .item_img img {
+		border-radius: 15px;
+		width: 100%;
+	}
+	
+	.cart_block .box_l .item_img .unit_price {
+		margin-top: 0.5em;
+		font-size: 3vw;
+		text-align: center;
+	}
+	
+	.cart_block .box_l .price_area {
+		margin-left: 5%;
+		width: calc(100% - 35%);
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 .item_quantity {
+		position: relative;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 .item_quantity .quantity_outer {
+		display: block;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 .item_quantity .quantity_outer::after {
+		content: "";
+		position: absolute;
+		background: url(/shared/img/lineup/common/detail/cart_arrow_02.png) no-repeat;
+		background-size: 100%;
+		width: 8vw;
+		height: 8vw;
+		top: 9px;
+		right: 15px;
+		pointer-events: none;
+	}
+	
+	.cart_block .box_l .lineup_detail_select_01 select {
+		width: 56vw;
+		height: 48px;
+		border-radius: 14px;
+		border: 4px solid #e9d7a7;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		font-size: 4.5vw;
+		background: #FFF;
+	}
+	
+	.cart_block .box_l .price_container {
+		line-height: 1.3;
+		text-align: right;
+		margin-top: 10px;
+	}
+	
+	.cart_block .box_l .price_container .yen {
+		font-weight: bold;
+		width: 110%;
+		text-align: center;
+	}
+	
+	.cart_block .box_l .price_container .yen .price_one_notax {
+		color: #C30D23;
+		font-size: 4.2rem;
+	}
+	
+	.cart_block .box_l .price_container .bulk_buy {
+		text-align: center;
+		padding: 4px 26px;
+		border-radius: 10px;
+		border: 2px solid #C30D23;
+		background: #FFFFFF;
+		color: #C30D23;
+		margin-top: 10px;
+		font-weight: bold;
+		font-size: 1.56rem;
+	}
+	
+	.cart_block .box_l .price_container .price_2column {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.cart_block .box_l .price_container .price_2column .tax {
+		font-size: 3.8vw;
+	}
+	
+	/* box_r */
+	.cart_block .box_r {
+		margin-top: 20px;
+	}
+	
+	.cart_block .lineup_detail_btn_01 input {
+		display: none;
+	}
+	
+	.cart_block .lineup_detail_btn_01 {
+		font-size: 5.4vw;
+	}
+	
+	.cart_block .lineup_detail_btn_01--pottage {
+		font-size: 4.2vw;
+	}
+	
+	.cart_block .lineup_detail_btn_01 label {
+		color: #FFFFFF;
+		border-radius: 10px;
+		min-height: 70px;
+		padding: 5px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		line-height: 1.5;
+		position: relative;
+	
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+	}
+	
+	.cart_block .lineup_detail_btn_01 label::before {
+		content: "";
+		background: url(/shared/img/lineup/common/detail-v2/cart_icon_01.png) no-repeat;
+		background-size: 100% auto;
+		width: 10vw;
+		height: 10vw;
+		position: absolute;
+		left: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.cart_block .lineup_detail_btn_01 label::after {
+		content: "";
+		background: url(/shared/img/lineup/common/detail-v2/cart_arrow_01.png) no-repeat;
+		background-size: 100%;
+		width: 8vw;
+		height: 8vw;
+		position: absolute;
+		right: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.cart_block .lineup_detail_great_value {
+		padding: 15px 4%;
+		border: 4px solid;
+		border-radius: 15px;
+		position: relative;
+		margin-top: 25px;
+		background: #FFFFFF;
+		text-align: center;
+	}
+	
+	.cart_block .lineup_detail_great_value::before,
+	.cart_block .lineup_detail_great_value::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		margin: auto;
+	}
+	
+	.cart_block .lineup_detail_great_value::before {
+		border-style: solid;
+		border-color: transparent transparent #000000 transparent;
+		border-width: 0px 16px 20px 16px;
+		top: -20px;
+	}
+	
+	.cart_block .lineup_detail_great_value::after {
+		border-style: solid;
+		border-color: transparent transparent #FFFFFF transparent;
+		border-width: 0px 12px 15px 12px;
+		top: -14px;
+	}
+	
+	.cart_block .lineup_detail_great_value .great_value_main {
+		font-size: 2rem;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	.cart_block .lineup_detail_great_value .great_value_main .great_value_price {
+		color: #C30D23;
+	}
+	
+	.cart_block .tab_containner .lineup_detail_great_value::after {
+		border-color: transparent transparent #FFFFFF transparent;
+	}
+	
+	.cart_block .note_list {
+		padding-top: 10px;
+	}
+	
+	.cart_block .popup_box {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 20px;
+	}
+	
+	.cart_block .popup_box .lineup_detail_btn_02 {
+		min-width: 100%;
+	}
+	
+	.cart_block .popup_box .lineup_detail_btn_02+.lineup_detail_btn_02 {
+		margin-top: 20px;
+	}
+	
+	.cart_block .lineup_detail_btn_02 a {
+		text-align: center;
+		border: 2px solid #bf916b;
+		background: #FFFFFF;
+		padding: 12px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		display: block;
+		position: relative;
+	}
+	
+	.cart_block .lineup_detail_btn_02 a::after {
+		content: "";
+		position: absolute;
+		background: url(/shared/img/lineup/common/detail/cart_icon_02.png) no-repeat;
+		width: 26px;
+		height: 26px;
+		right: 6%;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+	}
+	
+	/* ---- regular（定期）用 ---- */
+	.cart_block .tab_containner.regular {
+		background-image: url(/shared/img/lineup/common/detail-v2/cart_bg_03.png);
+		border-color: #23ac38;
+	}
+	
+	.cart_block .tab_containner.regular .tab_heading {
+		border-color: #23ac38;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01 label {
+		background: #07913a;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_great_value {
+		border-color: #23ac38;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_great_value::before {
+		border-color: transparent transparent #23ac38 transparent;
+	}
+	
+	/* once(都度買い）用 */
+	.cart_block .tab_containner.once {
+		background-image: url(/shared/img/lineup/common/detail-v2/cart_bg_02.png);
+		border-color: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .tab_heading {
+		border-color: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .lineup_detail_btn_01 label {
+		background-color: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .lineup_detail_great_value {
+		border-color: #C30D23;
+	}
+	
+	.cart_block .tab_containner.once .lineup_detail_great_value::before {
+		border-color: transparent transparent #C30D23 transparent;
+	}
+	
+	/* ---- shun（旬）用 ---- */
+	.cart_block .tab_containner.shun {
+		background-image: url(/shared/img/lineup/common/detail-v2/cart_bg_01.png);
+		border-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .tab_heading {
+		border-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .lineup_detail_btn_01 label {
+		background-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .lineup_detail_great_value {
+		border-color: #EA5514;
+	}
+	
+	.cart_block .tab_containner.shun .lineup_detail_great_value::before {
+		border-color: transparent transparent #EA5514 transparent;
+	}
+	
+	/* ---- 単品用 ---- */
+	.cart_block.single_block .box_conts .box_lr {}
+	
+	.cart_block.single_block .box_conts .box_lr:nth-of-type(n + 2) {
+		border-top: 1px dashed;
+		border-color: #C30D23;
+		margin-top: 30px;
+		padding-top: 20px;
+	}
+	
+	.cart_block.single_block .box_l .merchandise_container .name {
+		margin: 10px 0 0;
+		font-size: 1.7rem;
+		font-weight: bold;
+	}
+	
+	.cart_block.single_block .box_l .merchandise_container .txt {
+		margin: 10px 0 0;
+		font-size: 1.5rem;
+	}
+	
+	/* ---- 完売 ---- */
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label {
+		background: #a2a2a2;
+		box-shadow: none;
+		cursor: default;
+		pointer-events: none;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label::before,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label::before,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label::before,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label::before {
+		content: none;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label::after,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label::after,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label::after,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label::after {
+		content: none;
+	}
+	
+	.cart_block .tab_containner.regular .lineup_detail_btn_01.closed label:hover,
+	.cart_block .tab_containner.once .lineup_detail_btn_01.closed label:hover,
+	.cart_block .tab_containner.shun .lineup_detail_btn_01.closed label:hover,
+	.cart_block .product_box_inner.once .lineup_detail_btn_01.closed label:hover {
+		opacity: 1;
+	}
+	
+	.shun_block {
+		margin-top: 30px;
+	}
+	.shun_block .shun_heading .title {
+		text-align: center;
+	}
+	.shun_block .shun_body {
+		margin-top: 20px;
+	}
+	
+	/* banner_block */
+	.banner_block .block_heading .fs_extra_large {
+		font-size: 1.8rem;
+	}
+	
+	.banner_block .banner {
+		margin-top: 10px;
+		text-align: center;
+	}
+	
+	.banner_block .banner+.banner {
+		margin-top: 20px;
+	}
+	
+	/*  ingredients_block */
+	.ingredients_block .lineup_detail_accordion_1st {
+		border: 2px solid #bf916b;
+		padding-bottom: 0;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_heading {
+		justify-content: center;
+		font-weight: bold;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container {
+		line-height: 1.4;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container+.accordion_container {
+		margin-top: 20px;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container .accordion_note {
+		font-size: 1.4rem;
+	}
+	
+	.ingredients_block .lineup_detail_accordion_1st .accordion_container .accordion_note a {
+		text-decoration: underline;
+		text-decoration-color: #310000;
+		font-weight: bold;
+	}
+}

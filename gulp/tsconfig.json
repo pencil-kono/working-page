@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "target": "ESNext", // ターゲットのECMAScriptバージョン
+        "module": "ESNext", // モジュールの解決
+    }
+}

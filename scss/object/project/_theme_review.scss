@@ -1,0 +1,59 @@
+//==============================
+//
+//		_p-theme
+//
+//==============================
+@use "../../foundation/mixin";
+
+//==============================
+//		PC + SP
+//==============================
+
+
+
+//==============================
+//		PC
+//==============================
+@media #{mixin.$break_point_pc} {
+
+	.review_section{
+        background: url(/shared/img/lineup/yasaidashi/bg_img_01.png);
+        background-repeat: repeat;
+        margin-top: 0!important;
+        padding-bottom: 40px;
+
+        .review_box{
+            margin-top: 20px;
+        }
+    }
+
+}
+
+
+
+//==============================
+//		TAB
+//==============================
+// @media #{mixin.$break_point_tab}{
+// }
+
+
+
+
+//==============================
+//		SP
+//==============================
+@media #{mixin.$break_point_sp} {
+
+	.review_section{
+        background: url(/shared/img/lineup/yasaidashi/bg_img_01.png);
+        background-repeat: repeat;
+        margin-top: 0!important;
+        padding: 20px 0 30px;
+
+        .review_box{
+            margin-top: 20px;
+        }
+    }
+
+}
