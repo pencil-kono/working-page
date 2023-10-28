@@ -1,0 +1,16 @@
+.c-button{
+    border: 2px solid #000;
+    border-radius: 20px;
+    &--mail{
+        border-color: #707070;
+        color: #707070;
+    }
+    &--line{
+        border-color: #06C755;
+        color: #06C755;
+    }
+    &--tel{
+        border-color: #F2A700;
+        color: #F2A700;
+    }
+}

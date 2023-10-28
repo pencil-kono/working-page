@@ -1,0 +1,18 @@
+@use "../common/mixin";
+
+.l-header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    &__inner{}
+    &__logo{}
+    &__links{}
+    &__links-item{
+        display: flex;
+        column-gap: 10px;
+    }
+    &__links-button{}
+}

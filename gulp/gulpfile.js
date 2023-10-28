@@ -23,8 +23,8 @@ const tsProject = ts.createProject("tsconfig.json");
 
 const paths = {
 	scss:{
-		srcDir : '../scss/**/*.scss',
-    dstDir: '../css/'
+		srcDir : '../*.scss',
+    dstDir: '../'
 	},
 	js:{
     excFile : '../js/**/*.min.js',
@@ -75,7 +75,7 @@ function compileScss() {
       cascade: true
     }))
     .pipe(sourcemaps.mapSources(function(sourcePath,file) {
-      return '../../scss/' + sourcePath;
+      return '../' + sourcePath;
     }))
     .pipe(sourcemaps.write('.', {includeContent: false} ))
     .pipe(dest(paths.scss.dstDir))

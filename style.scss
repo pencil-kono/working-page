@@ -1,37 +1,30 @@
-//==============================
-//
-//		/lp/keirin549/
-//
-//==============================
-
-// ==========================================================================
-// はじめに
-// ==========================================================================
-// ● FLOCSSの概念をベースにファイル構成、命名規則を構成
-// ● Scssを使用
-// ● Scssのコンパイルツールは「Prepros」
-//   ■ Source Mapの生成
-//   ■ Prefix付きで生成
-//   ■ Minify化
-
 // ==========================================================================
 // Common
 // ==========================================================================
-@use "./scss/common/mixin";
-@use "./scss/common/reset";
+@import "./assets/scss/common/mixin";
+@import "./assets/scss/common/reset";
 
-// ==========================================================================
-// Foundation
-// ==========================================================================
-@use "../foundation/mixin";
-@use "../foundation/base";
 
 // ==========================================================================
 // Layout
 // ==========================================================================
-@use "../layout/box";
-@use "../layout/indent";
-@use "../layout/list";
+@import "./assets/scss/layout/l-header";
+
+.l-header{
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    &__inner{}
+    &__logo{}
+    &__links{}
+    &__links-item{
+        display: flex;
+        column-gap: 10px;
+    }
+    &__links-button{}
+}
+
 
 // ==========================================================================
 // Object
@@ -40,26 +33,26 @@
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
-@use "../object/component/btn";
-@use "../object/component/note";
-@use "../object/component/title";
+@import "./assets/scss/object/component/c-button";
+// @import "../object/component/note";
+// @import "../object/component/title";
 
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@use "../object/project/accordion";
-@use "../object/project/lineup_detail";
-@use "../object/project/nav_btn";
-@use "../object/project/theme_appeal";
-@use "../object/project/theme_information";
-@use "../object/project/theme_point";
-@use "../object/project/theme_story";
-@use "../object/project/theme_voice";
+// @import "../object/project/accordion";
+// @import "../object/project/lineup_detail";
+// @import "../object/project/nav_btn";
+// @import "../object/project/theme_appeal";
+// @import "../object/project/theme_information";
+// @import "../object/project/theme_point";
+// @import "../object/project/theme_story";
+// @import "../object/project/theme_voice";
 
 
 // -----------------------------------------------------------------
-// Utility 基本的に使用しない
+// Utility 
 // -----------------------------------------------------------------
 //==============================
 //		PC + SP
@@ -70,52 +63,20 @@
 //==============================
 //		PC
 //==============================
-@media #{mixin.$break_point_pc}{
-	.u-delivery_img {
-		position: relative;
-		padding: 0 0 0 260px;
-		
-		.delivery_box_01 {
-			position: absolute;
-			top: -20px;
-			left: 0;
-		}
-		.delivery_box_02 {
-			color: #009944;
-		}
-	}
-}
-
-
-
-//==============================
-//		TAB
-//==============================
-// @media #{mixin.$break_point_tab}{
+// @media #{mixin.$break_point_pc}{
 // }
 
 
 
+// //==============================
+// //		TAB
+// //==============================
+// // @media #{mixin.$break_point_tab}{
+// // }
 
-//==============================
-//		SP
-//==============================
-@media #{mixin.$break_point_sp}{
-	body {
-		-webkit-text-size-adjust: 100%;
-	}
-	
-	.u-delivery_img {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 
-		.delivery_box_01 {
-			width: 25%;
-		}
-		.delivery_box_02 {
-			width: 73%;
-			color: #009944;
-		}
-	}
-}
+// //==============================
+// //		SP
+// //==============================
+// @media #{mixin.$break_point_sp}{
+// }
