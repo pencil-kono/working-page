@@ -3,27 +3,17 @@
 // ==========================================================================
 @import "./assets/scss/common/mixin";
 @import "./assets/scss/common/reset";
+@import "./assets/scss/common/base";
 
 
 // ==========================================================================
 // Layout
 // ==========================================================================
 @import "./assets/scss/layout/l-header";
-
-.l-header{
-    width: 100vw;
-    height: 80px;
-    background-color: #fff;
-    position: fixed;
-    &__inner{}
-    &__logo{}
-    &__links{}
-    &__links-item{
-        display: flex;
-        column-gap: 10px;
-    }
-    &__links-button{}
-}
+@import "./assets/scss/layout/l-main";
+@import "./assets/scss/layout/l-fv";
+@import "./assets/scss/layout/l-news";
+@import "./assets/scss/layout/l-concept";
 
 
 // ==========================================================================
@@ -34,6 +24,7 @@
 // Component
 // -----------------------------------------------------------------
 @import "./assets/scss/object/component/c-button";
+@import "./assets/scss/object/component/c-section-ttl";
 // @import "../object/component/note";
 // @import "../object/component/title";
 
@@ -41,7 +32,8 @@
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-// @import "../object/project/accordion";
+@import "./assets/scss/object/project/p-fv";
+@import "./assets/scss/object/project/p-news";
 // @import "../object/project/lineup_detail";
 // @import "../object/project/nav_btn";
 // @import "../object/project/theme_appeal";
