@@ -1,0 +1,98 @@
+//==============================
+//
+//		_mixin
+//
+//==============================
+
+//==============================
+//		break point
+//==============================
+$break_point_pc: "only screen and (min-width:641px)";
+$break_point_tab: "only screen and (max-width:1100px)";
+$break_point_sp: "only screen and (max-width:640px)";
+
+//==============================
+//		transition
+//==============================
+@mixin transition_default {
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+//==============================
+//		opacity
+//==============================
+@mixin opacity_default {
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+//==============================
+//		calc
+//==============================
+@mixin calc_sp_width($data: 0) {
+	width: calc(#{$data} / 750 * 100%);
+}
+
+@mixin calc_sp_height($data: 0) {
+	height: calc(#{$data} / 750 * 100%);
+}
+
+@mixin calc_sp_top($data: 0) {
+	top: calc(#{$data} / 750 * 100%);
+}
+
+@mixin calc_sp_left($data: 0) {
+	left: calc(#{$data} / 750 * 100%);
+}
+
+@mixin calc_sp_right($data: 0) {
+	right: calc(#{$data} / 750 * 100%);
+}
+
+@mixin calc_sp_bottom($data: 0) {
+	bottom: calc(#{$data} / 750 * 100%);
+}
+
+//==============================
+//		centering
+//==============================
+@mixin img_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin upper_left_standard_central {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin upper_standard_central {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin left_base_central {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+//==============================
+//		column
+//==============================
+@mixin column_default($fwrap: nowrap, $jcontent: flex-start, $aitems: stretch) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: $fwrap;
+	justify-content: $jcontent;
+	align-items: $aitems;
+}
