@@ -1,5 +1,5 @@
 @use "../common/mixin";
 
 .l-fv{
-    padding-top: 80px;
+    padding-top: calc(70 / 393 * 100vw);
 }

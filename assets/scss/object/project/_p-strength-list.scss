@@ -1,7 +1,6 @@
 @use "../../common/mixin";
 
 @media #{$break_point_pc}{
-
     .p-strength-list{
         display: flex;
         justify-content: space-between;
@@ -25,5 +24,66 @@
             color: #656565;
         }
     }
+}
 
+
+@media only screen and (max-width:768px){
+    .p-strength-list{
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: calc((20 / 393) * 100vw);
+            border: 1px solid #D1D1D1;
+            border-radius: 4px;
+            &+&{
+                margin-top: calc((18 / 393) * 100vw);
+            }
+        }
+        &__ttl{
+            text-align: center;
+        }
+        &__ttl-wrap{
+            width: 100%;
+            background-color: #F7F7F7;
+            padding: calc((25 / 393) * 100vw) 0 0 0;
+        }
+        &__ttl-area{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-direction: row;
+            background-color: #F7F7F7;
+        }
+        &__cont{
+            margin-top: calc((20 / 393) * 100vw);
+            font-size: unquote('min(calc((16 / 393) * 100vw), 16px)');
+            line-height: calc(26/16);
+            color: #656565;
+        }
+    }
+}
+
+@media screen and (min-width:769px) and ( max-width:1024px) {
+    .p-strength-list{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            padding: 50px 24px;
+            border: 1px solid #D1D1D1;
+        }
+        &__ttl{
+            text-align: center;
+        }
+        &__cont{
+            margin-top: 30px;
+            font-size: unquote('min(calc((20 / 393) * 100vw), 20px)');
+            line-height: calc(26/16);
+            color: #656565;
+        }
+    }
 }

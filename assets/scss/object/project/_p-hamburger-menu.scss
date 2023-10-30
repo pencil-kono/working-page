@@ -1,17 +1,22 @@
 @use "../../common/mixin";
 
 .p-hamburger-menu{
+    margin-bottom: 2vw;
+    &__txt{
+        padding: 0 0.5rem;
+        font-size: unquote('min(calc((10 / 393) * 100vw), 10px)');
+    }
 }
 
-$color-white:                  #fff;
-$color-white-darker:           darken($color-white, 5%);
-$color-white-darken:           darken($color-white, 15%);
-$header-height:                80px;
-$nav-toggle-size:              2rem;
-$nav-toggle-transition-speed:  .3s;
-$nav-transition-speed:         .6s;
-$nav-width:                    25vw;
-$zindex-header:                500;
+$color-white: #fff;
+$color-white-darker: darken($color-white, 5%);
+$color-white-darken: darken($color-white, 15%);
+$header-height: calc(70 / 393 * 100vw);;
+$nav-toggle-size: 2rem;
+$nav-toggle-transition-speed: 0.3s;
+$nav-transition-speed: 0.6s;
+$nav-width: 40vw;
+$zindex-header: 500;
 
 .nav-button {
   text-transform: uppercase;
@@ -37,7 +42,7 @@ $zindex-header:                500;
   }
 }
 
-.nav {
+.hamburger-menu__list {
   position: relative;
   transform: rotateY(90deg);
   transform-origin: left center;
@@ -47,20 +52,13 @@ $zindex-header:                500;
     transform: rotateY(0deg);
   }
   
-  li {
-    &.active {
-      a {
-        background-color: #212635;
-      }
-    }
-  }
-  
   a {
     display: block;
     line-height: 1.4;
     padding: 0.7em 0.5em 0.7em 1.4em;
+    font-size: unquote('min(calc((16 / 393) * 100vw), 20px)');
     text-transform: uppercase;
-    
+    color: #fff;
     &:focus,
     &:hover {
       background-color: #2b3145;
@@ -69,19 +67,12 @@ $zindex-header:                500;
   }
 }
 
-
-//== Menu toggle (hamburgen)
-//
 @mixin button-lines {
-    background: #000;
+    background: #F2A700;
     border-radius: $nav-toggle-size/10;
     display: inline-block;
     height: $nav-toggle-size/10;
     width: $nav-toggle-size;
-    
-    &:hover {
-        background: #000;
-    }
 }
 
 .button-lines {
@@ -95,6 +86,7 @@ $zindex-header:                500;
 
 .lines {
     @include button-lines;
+    height: 0;
     position: relative;
     z-index: 100;
 

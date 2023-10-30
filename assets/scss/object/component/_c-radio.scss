@@ -1,7 +1,6 @@
 @use "../../common/mixin";
 
 @media #{$break_point_pc}{
-
     .c-radio{
         &__input{
             position: absolute;
@@ -41,7 +40,94 @@
                 transform: translateY(-50%);
             }
         }
+    }
+}
 
+
+@media only screen and (max-width:768px){
+    .c-radio{
+        &__input{
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            &:checked{
+                & + label{
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: calc((12 / 393) * 100vw);
+                        height: calc((12 / 393) * 100vw);
+                        background-color: #F2A700;
+                        position: absolute;
+                        top: 50%;
+                        left: calc((19 / 393) * 100vw);
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        &__label{
+            padding-left: calc((40 / 393) * 100vw);
+            font-size: unquote('min(calc((16 / 393) * 100vw), 16px)');
+            position: relative;
+            &::before{
+                content: '';
+                display: inline-block;
+                border-radius: 50%;
+                border: 1px solid #656565;
+                width: calc((20 / 393) * 100vw);
+                height: calc((20 / 393) * 100vw);
+                position: absolute;
+                top: 50%;
+                left: calc((15 / 393) * 100vw);
+                transform: translateY(-50%);
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:769px) and ( max-width:1024px) {
+    .c-radio{
+        &__input{
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            &:checked{
+                & + label{
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: calc((12 / 1366) * 100vw);
+                        height: calc((12 / 1366) * 100vw);
+                        background-color: #F2A700;
+                        position: absolute;
+                        top: 50%;
+                        left: calc((18.4 / 1366) * 100vw);
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        &__label{
+            padding-left: calc((40 / 1366) * 100vw);
+            font-size: unquote('min(calc((20 / 1366) * 100vw), 20px)');
+            position: relative;
+            &::before{
+                content: '';
+                display: inline-block;
+                border-radius: 50%;
+                border: 1px solid #656565;
+                width: calc((20 / 1366) * 100vw);
+                height: calc((20 / 1366) * 100vw);
+                position: absolute;
+                top: 50%;
+                left: calc((15 / 1366) * 100vw);
+                transform: translateY(-50%);
+            }
+        }
     }
 
 }

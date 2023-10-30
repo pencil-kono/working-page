@@ -75,22 +75,29 @@
             </div>
 
             <div class="p-hamburger-menu sp_only">
-                <button aria-label='Toggle menu' class='nav-button button-lines button-lines-x close' role='button' type='button'>
+                <button class='hamburger-menu__button nav-button button-lines button-lines-x close' role='button' type='button'>
                     <span class='lines'></span>
                 </button>
-                <nav class='nav-wrapper'>
-                    <ul class='nav'>
-                        <li class='active'>
-                        <a href='#'>Page 1</a>
+                <p class="p-hamburger-menu__txt">MENU</p>
+                <nav class='hamburger-menu__nav nav-wrapper'>
+                    <ul class='nav hamburger-menu__list'>
+                        <li class='hamburger-menu__item'>
+                            <a href='#'>トップページ</a>
                         </li>
-                        <li>
-                        <a href='#'>Page 2</a>
+                        <li class='hamburger-menu__item'>
+                            <a href='#'>施工事例</a>
                         </li>
-                        <li>
-                        <a href='#'>Page 3</a>
+                        <li class='hamburger-menu__item'>
+                            <a href='#'>リフォームの<br>お得情報</a>
                         </li>
-                        <li>
-                        <a href='#'>Page 4</a>
+                        <li class='hamburger-menu__item'>
+                            <a href='#'>お問い合わせ</a>
+                        </li>
+                        <li class='hamburger-menu__item'>
+                            <a href='#'>お知らせ</a>
+                        </li>
+                        <li class='hamburger-menu__item'>
+                            <a href='#'>プライバシー<br>ポリシー</a>
                         </li>
                     </ul>
                 </nav>
@@ -431,10 +438,12 @@
                 <div class="p-strength__list p-strength-list">
                     
                     <div class="p-strength-list__item">
-                        <div class="p-strength-list__ttl-area c-big-ttl">
-                            <p class="p-strength-list__ttl c-big-ttl__txt">
-                                最低<span class="c-big-ttl__txt--big c-big-ttl__txt--yellow">20</span>年
-                            </p>
+                        <div class="p-strength-list__ttl-wrap">
+                            <div class="p-strength-list__ttl-area c-big-ttl">
+                                <p class="p-strength-list__ttl c-big-ttl__txt">
+                                    最低<span class="c-big-ttl__txt--big c-big-ttl__txt--yellow">20</span>年
+                                </p>
+                            </div>
                         </div>
                         <p class="p-strength-list__cont">
                             リフォームの施工技術の質を担保するために、提携する職人チームは20年以上の熟練職人のみを起用しております。
@@ -442,11 +451,13 @@
                     </div>
 
                     <div class="p-strength-list__item">
-                        <div class="p-strength-list__ttl-area c-big-ttl c-big-ttl--row2">
-                            <p class="p-strength-list__ttl c-big-ttl__txt">
-                                <span class="c-big-ttl__txt--big c-big-ttl__txt--yellow">300</span>
-                            </p>
-                            <p class="p-strength-list__ttl c-big-ttl__txt">回以上</p>
+                        <div class="p-strength-list__ttl-wrap">
+                            <div class="p-strength-list__ttl-area c-big-ttl c-big-ttl--row2">
+                                <p class="p-strength-list__ttl c-big-ttl__txt">
+                                    <span class="c-big-ttl__txt--big c-big-ttl__txt--yellow">300</span>
+                                </p>
+                                <p class="p-strength-list__ttl c-big-ttl__txt">回以上</p>
+                            </div>
                         </div>
                         <p class="p-strength-list__cont">
                             スキルを磨き続けてもらうために、リフォームの職人は年間300回以上の施工に取り組んでおります。
@@ -454,11 +465,13 @@
                     </div>
 
                     <div class="p-strength-list__item">
-                        <div class="p-strength-list__ttl-area c-big-ttl c-big-ttl--row2">
-                            <p class="p-strength-list__ttl c-big-ttl__txt">
-                                <span class="c-big-ttl__txt--big c-big-ttl__txt--yellow">50,000</span>
-                            </p>
-                            <p class="p-strength-list__ttl c-big-ttl__txt">回以上</p>
+                        <div class="p-strength-list__ttl-wrap">
+                            <div class="p-strength-list__ttl-area c-big-ttl c-big-ttl--row2">
+                                <p class="p-strength-list__ttl c-big-ttl__txt">
+                                    <span class="c-big-ttl__txt--big c-big-ttl__txt--yellow">50,000</span>
+                                </p>
+                                <p class="p-strength-list__ttl c-big-ttl__txt">回以上</p>
+                            </div>
                         </div>
                         <p class="p-strength-list__cont">
                             リフォームの延べ施工回数は50,000回を超えました。膨大な経験と知識でお客様の理想の生活をリフォームで実現します。
@@ -516,7 +529,7 @@
                 <div class="p-faq__list p-faq-accordion">
                     
                     <div class="p-faq-accordion__item">
-                        <p class="p-faq-accordion__ttl active">初回見積もりから金額が変わることがありますか？</p>
+                        <p class="p-faq-accordion__ttl active">初回見積もりから金額が<br class="sp_only">変わることがありますか？</p>
                         <div class="p-faq-accordion__cont active">
                             <p class="p-faq-accordion__txt">築年数などによって変わることがございます。具体的には「排水管」や「ブレーカーの残数」などの状況によって変わります。</p>
                         </div>

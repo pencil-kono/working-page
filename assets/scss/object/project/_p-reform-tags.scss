@@ -18,12 +18,12 @@
 
     .p-reform-tags{
         &__list{
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             flex-wrap: wrap;
             gap: calc(10 / 393 * 100vw);
         }
         &__item{
-            width: calc(176 / 393 * 100vw);
         }
     }
 
