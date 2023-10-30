@@ -4,26 +4,22 @@
 //
 //==============================
 $pc_width: 1366;
-$sp_width: 1366;
+$sp_width: 393;
 
 //==============================
 //		function
 //==============================
-@function computed_pc_vw($value) {
-	@return calc($value / $pc_width * 100vw);
-}
-// calc( / 1366 * 100vw);
-
-@function computed_sp_vw($value) {
+@function computed_vw($value) {
 	@return calc($value / $sp_width * 100vw);
 }
 
 //==============================
 //		break point
 //==============================
-$break_point_pc: "only screen and (min-width:641px)";
-$break_point_tab: "only screen and (max-width:1100px)";
-$break_point_sp: "only screen and (max-width:640px)";
+$break_point_pc: "only screen and (min-width:1025px)";
+$break_point_tab: "only screen and (max-width:1024x)";
+// $break_point_sp: "only screen and (max-width:768px)";
+$break_point_sp: "only screen and (max-width:1024px)";
 
 //==============================
 //		img

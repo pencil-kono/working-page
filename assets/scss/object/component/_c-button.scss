@@ -1,11 +1,12 @@
-@import "../../common/mixin";
+@use "../../common/mixin";
 
 .c-button{
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 15px 25px;
+    padding: calc((17 / 1366) * 100vw) 0 calc((15 / 1366) * 100vw) 0;
     border: 2px solid #000;
     border-radius: 50px;
     font-size: unquote('min(calc((14 / 1366) * 100vw), 14px)');
@@ -13,21 +14,75 @@
     transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
     background-color: #fff;
     &--mail{
-        padding-left: 50px;
+        padding-left: calc((30 / 1366) * 100vw);
         border-color: #707070;
         color: #707070;
+        position: relative;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: calc(26 / 1366 * 100vw);
+            height: calc(17 / 1366 * 100vw);
+            background-image: url(/assets/img/mail_icon.png);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: calc((20 / 154) * 100%);
+            top: 50%;
+            transform: translateY(-50%);
+        }
         &:hover{
             background-color: #707070;
             color: #fff;
+            &::before{
+                content: "";
+                display: inline-block;
+                width: calc(26 / 1366 * 100vw);
+                height: calc(17 / 1366 * 100vw);
+                background-image: url(/assets/img/mail_icon_white.png);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: calc((20 / 154) * 100%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
     &--line{
-        padding-left: 50px;
+        padding-left: calc((30 / 1366) * 100vw);
         border-color: #06C755;
         color: #06C755;
+        position: relative;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: calc(24 / 1366 * 100vw);
+            height: calc(25 / 1366 * 100vw);
+            background-image: url(/assets/img/line_icon.png);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: calc((20 / 154) * 100%);
+            top: 50%;
+            transform: translateY(-50%);
+        }
         &:hover{
             background-color: #06C755;
             color: #fff;
+            &::before{
+                content: "";
+                display: inline-block;
+                width: calc(24 / 1366 * 100vw);
+                height: calc(25 / 1366 * 100vw);
+                background-image: url(/assets/img/line_icon_white.png);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: calc((20 / 154) * 100%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
     &--tel{
@@ -37,6 +92,16 @@
         &:hover{
             background-color: #F2A700;
             color: #fff;
+        }
+    }
+    &--big{
+        &::before{
+            left: calc((60 / 283) * 100%);
+        }
+        &:hover{
+            &::before{
+                left: calc((60 / 283) * 100%);
+            }
         }
     }
 }

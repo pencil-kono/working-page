@@ -10,10 +10,18 @@
 // Layout
 // ==========================================================================
 @import "./assets/scss/layout/l-header";
+@import "./assets/scss/layout/l-footer";
 @import "./assets/scss/layout/l-main";
 @import "./assets/scss/layout/l-fv";
 @import "./assets/scss/layout/l-news";
 @import "./assets/scss/layout/l-concept";
+@import "./assets/scss/layout/l-kodawari";
+@import "./assets/scss/layout/l-service";
+@import "./assets/scss/layout/l-reform";
+@import "./assets/scss/layout/l-strength";
+@import "./assets/scss/layout/l-flow";
+@import "./assets/scss/layout/l-faq";
+@import "./assets/scss/layout/l-contact";
 
 
 // ==========================================================================
@@ -24,9 +32,19 @@
 // Component
 // -----------------------------------------------------------------
 @import "./assets/scss/object/component/c-button";
+@import "./assets/scss/object/component/c-jump-button";
 @import "./assets/scss/object/component/c-section-ttl";
-// @import "../object/component/note";
-// @import "../object/component/title";
+@import "./assets/scss/object/component/c-section-cat";
+@import "./assets/scss/object/component/c-vertical-ttl";
+@import "./assets/scss/object/component/c-section-subttl";
+@import "./assets/scss/object/component/c-card";
+@import "./assets/scss/object/component/c-tag";
+@import "./assets/scss/object/component/c-big-ttl";
+@import "./assets/scss/object/component/c-radio";
+@import "./assets/scss/object/component/c-form-label";
+@import "./assets/scss/object/component/c-form-input";
+@import "./assets/scss/object/component/c-form-select";
+@import "./assets/scss/object/component/c-form-textarea";
 
 
 // -----------------------------------------------------------------
@@ -34,13 +52,29 @@
 // -----------------------------------------------------------------
 @import "./assets/scss/object/project/p-fv";
 @import "./assets/scss/object/project/p-news";
-// @import "../object/project/lineup_detail";
-// @import "../object/project/nav_btn";
-// @import "../object/project/theme_appeal";
-// @import "../object/project/theme_information";
-// @import "../object/project/theme_point";
-// @import "../object/project/theme_story";
-// @import "../object/project/theme_voice";
+@import "./assets/scss/object/project/p-concept";
+@import "./assets/scss/object/project/p-kodawari";
+@import "./assets/scss/object/project/p-kodawari-grid-list";
+@import "./assets/scss/object/project/p-service";
+@import "./assets/scss/object/project/p-service-reform";
+@import "./assets/scss/object/project/p-service-land";
+@import "./assets/scss/object/project/p-service-info";
+@import "./assets/scss/object/project/p-reform";
+@import "./assets/scss/object/project/p-reform-tags";
+@import "./assets/scss/object/project/p-reform-achieve";
+@import "./assets/scss/object/project/p-strength";
+@import "./assets/scss/object/project/p-strength-list";
+@import "./assets/scss/object/project/p-flow";
+@import "./assets/scss/object/project/p-flow-list";
+@import "./assets/scss/object/project/p-faq";
+@import "./assets/scss/object/project/p-faq-accordion";
+@import "./assets/scss/object/project/p-contact";
+@import "./assets/scss/object/project/p-contact-form";
+@import "./assets/scss/object/project/p-form";
+@import "./assets/scss/object/project/p-hamburger-menu";
+
+
+@import "./assets/scss/object/project/p-section-heading";
 
 
 // -----------------------------------------------------------------
