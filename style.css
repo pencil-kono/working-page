@@ -421,10 +421,11 @@ input, select {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: calc((17 / 1366) * 100vw) 0 calc((15 / 1366) * 100vw) 0;
+  padding: calc((15 / 1366) * 100vw) 0;
   border: 2px solid #000;
   border-radius: 50px;
   font-size: min(calc((14 / 1366) * 100vw), 14px);
+  font-weight: bold;
   text-decoration: none;
   -webkit-transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
@@ -840,7 +841,7 @@ input, select {
     background-color: #F2A700;
     position: absolute;
     top: 50%;
-    left: calc((19 / 1366) * 100vw);
+    left: calc((18.4 / 1366) * 100vw);
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -1560,7 +1561,7 @@ input, select {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 24px;
+    padding: 20px;
   }
   .p-service-info__ttl {
     font-size: min(calc((18 / 1366) * 100vw), 18px);
@@ -1571,7 +1572,7 @@ input, select {
     width: calc((736 / 1366) * 100vw);
     padding: 24px;
     background-color: #fff;
-    font-size: min(calc((14 / 1366) * 100vw), 14px);
+    font-size: min(calc((13.6 / 1366) * 100vw), 14px);
     line-height: calc(26/14);
   }
   .p-service-info__cont--bold {

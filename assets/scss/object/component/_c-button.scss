@@ -6,10 +6,11 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: calc((17 / 1366) * 100vw) 0 calc((15 / 1366) * 100vw) 0;
+    padding: calc((15 / 1366) * 100vw) 0;
     border: 2px solid #000;
     border-radius: 50px;
     font-size: unquote('min(calc((14 / 1366) * 100vw), 14px)');
+    font-weight: bold;
     text-decoration: none;
     transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
     background-color: #fff;
