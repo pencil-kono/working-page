@@ -63,6 +63,11 @@ a {
   background: transparent;
 }
 
+a,
+a:visited {
+  color: inherit;
+}
+
 ins {
   background-color: #ff9;
   color: #000;
@@ -435,7 +440,7 @@ input, select {
 .c-button--mail {
   padding-left: calc((30 / 1366) * 100vw);
   border-color: #707070;
-  color: #707070;
+  color: #707070 !important;
   position: relative;
 }
 
@@ -477,7 +482,7 @@ input, select {
 .c-button--line {
   padding-left: calc((30 / 1366) * 100vw);
   border-color: #06C755;
-  color: #06C755;
+  color: #06C755 !important;
   position: relative;
 }
 
