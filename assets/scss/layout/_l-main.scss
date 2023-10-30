@@ -1,0 +1,16 @@
+@use "../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .l-main{
+        overflow: hidden;
+    }
+
+}
+
+@media #{$break_point_sp}{
+
+    .l-main{
+        overflow: hidden;
+    }
+}

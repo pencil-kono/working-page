@@ -1,0 +1,149 @@
+@use "../../common/mixin";
+
+.p-hamburger-menu{
+}
+
+$color-white:                  #fff;
+$color-white-darker:           darken($color-white, 5%);
+$color-white-darken:           darken($color-white, 15%);
+$header-height:                80px;
+$nav-toggle-size:              2rem;
+$nav-toggle-transition-speed:  .3s;
+$nav-transition-speed:         .6s;
+$nav-width:                    25vw;
+$zindex-header:                500;
+
+.nav-button {
+  text-transform: uppercase;
+}
+
+.nav-wrapper {
+  background-color: #343c55;
+  box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  padding-top: $header-height;
+  perspective: 1000px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform $nav-transition-speed, visibility $nav-transition-speed;
+  visibility: hidden;
+  width: $nav-width;
+  
+  .nav-visible & {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.nav {
+  position: relative;
+  transform: rotateY(90deg);
+  transform-origin: left center;
+  transition: transform $nav-transition-speed;
+  
+  .nav-visible & {
+    transform: rotateY(0deg);
+  }
+  
+  li {
+    &.active {
+      a {
+        background-color: #212635;
+      }
+    }
+  }
+  
+  a {
+    display: block;
+    line-height: 1.4;
+    padding: 0.7em 0.5em 0.7em 1.4em;
+    text-transform: uppercase;
+    
+    &:focus,
+    &:hover {
+      background-color: #2b3145;
+      text-decoration: none;
+    }
+  }
+}
+
+
+//== Menu toggle (hamburgen)
+//
+@mixin button-lines {
+    background: #000;
+    border-radius: $nav-toggle-size/10;
+    display: inline-block;
+    height: $nav-toggle-size/10;
+    width: $nav-toggle-size;
+    
+    &:hover {
+        background: #000;
+    }
+}
+
+.button-lines {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: $nav-toggle-size/2 $nav-toggle-size/4;
+    user-select: none;
+}
+
+.lines {
+    @include button-lines;
+    position: relative;
+    z-index: 100;
+
+    &:after,
+    &:before {
+        @include button-lines;
+        content: "";
+        left: 0;
+        position: absolute;
+    }
+
+    &:after {
+        top: $nav-toggle-size/4;
+    }
+
+    &:before {
+        top: -$nav-toggle-size/4;
+    }
+}
+
+.button-lines-x {
+    .lines {
+        transition: background .3s ease;
+
+        &:after,
+        &:before {
+            transform-origin: 50% 50% 0;
+            transition: top .3s .4s ease, transform .3s ease;
+        }    
+    }
+
+    .nav-visible & {
+        .lines {
+            background: transparent;
+        
+            &:after,
+            &:before {
+                top: 0;
+                transition: top .3s ease, transform .3s .3s ease;
+                background-color: #fff;
+            }
+            
+            &:after {
+                transform: rotate3d(0, 0, 1, 45deg);
+            }
+            
+            &:before {
+                transform: rotate3d(0, 0, 1, -45deg);
+            }
+        }
+    }
+}

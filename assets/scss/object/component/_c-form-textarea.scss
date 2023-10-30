@@ -1,0 +1,15 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .c-form-textarea{
+        min-height: calc((230 / 1366) * 100vw);
+        padding: 15px calc((20 / 1366) * 100vw);
+        background-color: #F7F7F7;
+        border: none;
+        &::placeholder{
+            color: #BFBFBF;
+        }
+    }
+
+}

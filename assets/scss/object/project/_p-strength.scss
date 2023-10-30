@@ -1,0 +1,16 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .p-strength{
+        width: calc(1020 / 1366 * 100vw);
+        margin-left: auto;
+        margin-right: auto;
+        &__inner{}
+        &__heading{}
+        &__list{
+            margin-top: 40px;
+        }
+    }
+
+}

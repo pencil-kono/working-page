@@ -1,0 +1,21 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+    .c-section-ttl{
+        font-size: unquote('min(calc((32 / 1366) * 100vw), 32px)');
+        font-weight: bold;
+        color: #111;
+        line-height: calc(48/32);
+        text-align: center;
+    }
+}
+
+@media #{$break_point_sp}{
+    .c-section-ttl{
+        font-size: unquote('min(calc((24 / 392) * 100vw), 24px)');
+        font-weight: bold;
+        color: #111;
+        line-height: calc(37/24);
+        text-align: center;
+    }
+}

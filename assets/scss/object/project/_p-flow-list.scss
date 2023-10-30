@@ -1,0 +1,72 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .p-flow-list{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            width: calc(194 / 1366 * 100vw);
+            padding: 40px calc(20 / 1366 * 100vw) 20px calc(20 / 1366 * 100vw);
+            background-color: #fff;
+            position: relative;
+            &::after{
+                content: "";
+                display: inline-block;
+                width: calc(17 / 1366 * 100vw);
+                height: calc(16 / 1366 * 100vw);
+                background-image: url(/assets/img/arrow_icon_01.png);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: calc(-15 / 1366 * 100vw);
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
+            }
+            &::before{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: calc(38 / 1366 * 100vw);
+                height: calc(38 / 1366 * 100vw);
+                background-color: #F2A700;
+                border-radius: 50%;
+                font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
+                font-weight: bold;
+                color: #fff;
+                position: absolute;
+                left: 50%;
+                top: calc(-19 / 1366 * 100vw);
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+            @for $i from 1 to 6{
+                &:nth-of-type(#{$i}){
+                    &::before{
+                        content: "0#{$i}";
+                    }
+                }
+            }
+            &:last-of-type{
+                &::after{
+                    content: none;
+                }
+            }
+        }
+        &__list{}
+        &__ttl{
+            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-weight: bold;
+            color: #111;
+            text-align: center;
+        }
+        &__cont{
+            margin-top: 24px;
+            font-size: unquote('min(calc((14 / 1366) * 100vw), 14px)');
+            color: #656565;
+            line-height: calc(24/14);
+        }
+    }
+
+}

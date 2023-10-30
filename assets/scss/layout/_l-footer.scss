@@ -1,0 +1,63 @@
+@use "../common/mixin";
+
+@media #{$break_point_pc}{
+    .l-footer{
+        &__inner{
+        }
+        &__nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(960 / 1366 * 100vw);
+            margin-left: auto;
+            margin-right: auto;
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        &__logo{
+            display: flex;
+            align-items: center;
+            width: calc(230 / 1366 * 100vw);
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        &__links{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: calc(80 / 1366 * 100vw);
+            row-gap: 20px;
+        }
+        &__link-item{
+            padding-left: calc(20 / 1366 * 100vw);
+            position: relative;
+            &::after{
+                content: "";
+                width: calc((12 / 1366) * 100vw);
+                height: 1px;
+                background-color: #111;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &__link{
+            display: inline-block;
+            text-decoration: none;
+            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-weight: bold;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        &__copyright{
+            padding: 15px 0;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            font-size: unquote('min(calc((12 / 1366) * 100vw), 12px)');
+        }
+    }
+}

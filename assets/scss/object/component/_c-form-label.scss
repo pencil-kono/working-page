@@ -1,0 +1,36 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .c-form-label{
+        font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+        font-weight: bold;
+        &--require{
+            padding-left: calc((60 / 1366) * 100vw);
+            position: relative;
+            &::before{
+                content: "必須";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: calc((50 / 1366) * 100vw);
+                height: calc((18 / 1366) * 100vw);
+                color: #fff;
+                font-size: unquote('min(calc((12 / 1366) * 100vw), 12px)');
+                font-weight: bold;
+                line-height: 1;
+                background-color: #9B2727;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &--small{
+            font-size: unquote('min(calc((14 / 1366) * 100vw), 14px)');
+            font-weight: normal;
+        }
+
+    }
+
+}

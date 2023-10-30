@@ -1,0 +1,29 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .p-strength-list{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            width: calc((300 / 1366) * 100vw);
+            padding: 50px calc((24 / 1366) * 100vw);
+            border: 1px solid #D1D1D1;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__ttl{
+            text-align: center;
+        }
+        &__cont{
+            margin-top: 50px;
+            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            line-height: calc(26/16);
+            color: #656565;
+        }
+    }
+
+}

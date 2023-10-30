@@ -1,0 +1,9 @@
+@use "../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .l-flow{
+        margin-top: 80px;
+    }
+
+}

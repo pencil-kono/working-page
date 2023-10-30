@@ -1,0 +1,85 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+    .c-jump-button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px 0 20px calc((70 / 1366) * 100vw);
+        border-radius: 50px;
+        font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+        font-weight: bold;
+        text-decoration: none;
+        border: none;
+        background-color: #fff;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-bottom: solid 2px #111;
+            border-right: solid 2px #111;
+            border-radius: 2px;
+            position: absolute;
+            left: calc((40 / 1366) * 100vw );
+            top: 38%;
+            transform: rotate(-45deg) translateY(50%);
+        }
+        &--black{
+            color: #fff;
+            background-color: #111;
+            padding: 20px 0 20px calc((90 / 1366) * 100vw);
+            &::after{
+                left: calc((60 / 1366) * 100vw );
+                border-bottom: solid 2px #fff;
+                border-right: solid 2px #fff;
+            }
+        }
+        &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+}
+
+@media #{$break_point_sp}{
+    .c-jump-button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: calc((20 / 393) * 100vw) 0 calc((20 / 393) * 100vw) calc((70 / 393) * 100vw);
+        border-radius: 50px;
+        font-size: unquote('min(calc((16 / 393) * 100vw), 16px)');
+        font-weight: bold;
+        text-decoration: none;
+        border: none;
+        background-color: #fff;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-bottom: solid 2px #111;
+            border-right: solid 2px #111;
+            border-radius: 2px;
+            position: absolute;
+            left: calc((40 / 393) * 100vw );
+            top: 38%;
+            transform: rotate(-45deg) translateY(50%);
+        }
+        &--black{
+            color: #fff;
+            background-color: #111;
+            padding: 20px 0 20px calc((90 / 393) * 100vw);
+            &::after{
+                left: calc((60 / 393) * 100vw );
+                border-bottom: solid 2px #fff;
+                border-right: solid 2px #fff;
+            }
+        }
+    }
+}

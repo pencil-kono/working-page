@@ -1,0 +1,60 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .p-form{
+        &__item{
+            display: flex;
+            flex-direction: column;
+            & + &{
+                margin-top: 24px;
+            }
+
+            &--column2{
+                flex-direction: row;
+                column-gap: calc((60 / 1366) * 100vw);
+                width: 100%;
+                &-item{
+                    width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    .p-form__input{
+                        width: calc((170 / 1366) * 100vw);
+                    }
+                    .p-form__select{
+                        width: calc((170 / 1366) * 100vw);
+                    }
+                }
+            }
+        }
+        &__label{
+        }
+        &__input{
+            width: 100%;
+            margin-top: 8px;
+        }
+        &__select{
+            width: 100%;
+            margin-top: 8px;
+        }
+        &__radio-group{
+            margin-top: 20px;
+        }
+        &__radio-item{
+            & + &{
+                margin-top: 15px;
+            }
+        }
+        &__textarea{
+            margin-top: 8px;
+        }
+        &__submit{
+            width: calc((280 / 1366) * 100vw);
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    }
+
+}

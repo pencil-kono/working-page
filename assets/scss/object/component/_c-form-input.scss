@@ -1,0 +1,16 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .c-form-input{
+        padding: 15px calc((20 / 1366) * 100vw);
+        background-color: #F7F7F7;
+        border: none;
+        line-height: 1.4;
+        min-height: 56px;
+        &::placeholder{
+            color: #BFBFBF;
+        }
+    }
+
+}

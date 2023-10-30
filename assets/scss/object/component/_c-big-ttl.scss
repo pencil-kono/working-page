@@ -1,0 +1,24 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .c-big-ttl{
+        height: calc((82 / 1366) * 100vw);
+        &--row2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__txt{
+            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-weight: bold;
+            &--big{
+                font-size: unquote('min(calc((66 / 1366) * 100vw), 66px)');
+            }
+            &--yellow{
+                color: #F2A700;
+            }
+        }
+    }
+
+}

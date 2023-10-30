@@ -1,0 +1,41 @@
+@use "./mixin";
+
+
+@media #{$break_point_pc}{
+    .pc_only{
+        display: block;
+    }
+    .sp_only{
+        display: none;
+    }
+    
+    img{
+        width: 100%;
+    }
+}
+
+
+
+//==============================
+//		TAB
+//==============================
+// @media #{mixin.$break_point_tab}{
+// }
+
+
+//==============================
+//		SP
+//==============================
+@media #{$break_point_sp}{
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+
+    
+    img{
+        width: 100%;
+    }
+}

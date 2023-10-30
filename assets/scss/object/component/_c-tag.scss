@@ -1,0 +1,27 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+    .c-tag{
+        display: inline-block;
+        padding: 4px 10px;
+        font-size: unquote('min(calc((11 / 1366) * 100vw), 11px)');
+        font-weight: bold;
+        &--yellow{
+            background-color: #F2A700;
+            color: #fff;
+        }
+    }
+}
+
+@media #{$break_point_sp}{
+    .c-tag{
+        display: inline-block;
+        padding: 2px 8px;
+        font-size: unquote('min(calc((11 / 1366) * 100vw), 11px)');
+        font-weight: bold;
+        &--yellow{
+            background-color: #F2A700;
+            color: #fff;
+        }
+    }
+}

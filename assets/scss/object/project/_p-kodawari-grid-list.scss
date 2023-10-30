@@ -1,0 +1,128 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+    .p-kodawari-grid-list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 8px;
+        &__item{
+            position: relative;
+        }
+        &__ttl{
+            padding-left: calc((40 / 1366) * 100vw);
+            position: absolute;
+            left: calc((15 / 1366) * 100vw);
+            top: calc((40 / 1366) * 100vw);
+            color: #fff;
+            font-size: unquote('min(calc((30 / 1366) * 100vw), 30px)');
+            &::before{
+                content: "";
+                width: calc((27 / 1366) * 100vw);
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                top: calc((12 / 1366) * 100vw);
+                left: 0;
+            }
+        }
+        &__desc{
+            width: calc((380 / 1366) * 100vw);
+            height: calc((150 / 1366) * 100vw);
+            padding: calc((24 / 1366) * 100vw);
+            background-color: #fff;
+            border-radius: 5px;
+            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            line-height: calc(24/16);
+            position: absolute;
+            left: 50%;
+            bottom: calc((20 / 1366) * 100vw);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .p-kodawari-grid-list{
+        width: 100%;
+        &__item{
+            position: relative;
+            & + &{
+                margin-top: calc((18 / 393) * 100vw);
+            }
+        }
+        &__ttl{
+            padding-left: calc((40 / 393) * 100vw);
+            position: absolute;
+            left: calc((12 / 393) * 100vw);
+            top: calc((40 / 393) * 100vw);
+            color: #fff;
+            font-size: calc((30 / 393) * 100vw);
+            &::before{
+                content: "";
+                width: calc((27 / 393) * 100vw);
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                top: calc((12 / 393) * 100vw);
+                left: 0;
+            }
+        }
+        &__desc{
+            width: calc((337 / 393) * 100vw);
+            padding: calc((12 / 393) * 100vw);
+            background-color: #fff;
+            border-radius: 5px;
+            font-size: calc((16 / 393) * 100vw);
+            line-height: calc(24/16);
+            position: absolute;
+            left: 50%;
+            bottom: calc((12 / 393) * 100vw);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media screen and (min-width:769px) and ( max-width:1024px) {
+    .p-kodawari-grid-list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 8px;
+        &__item{
+            position: relative;
+        }
+        &__ttl{
+            padding-left: calc((40 / 1366) * 100vw);
+            position: absolute;
+            left: calc((15 / 1366) * 100vw);
+            top: calc((40 / 1366) * 100vw);
+            color: #fff;
+            font-size: unquote('min(calc((30 / 1366) * 100vw), 30px)');
+            &::before{
+                content: "";
+                width: calc((27 / 1366) * 100vw);
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                top: calc((12 / 1366) * 100vw);
+                left: 0;
+            }
+        }
+        &__desc{
+            width: calc((590 / 1366) * 100vw);
+            height: calc((150 / 1366) * 100vw);
+            padding: calc((24 / 1366) * 100vw);
+            background-color: #fff;
+            border-radius: 5px;
+            font-size: unquote('min(calc((20 / 1366) * 100vw), 20px)');
+            line-height: calc(24/16);
+            position: absolute;
+            left: 50%;
+            bottom: calc((20 / 1366) * 100vw);
+            transform: translateX(-50%);
+        }
+    }
+}

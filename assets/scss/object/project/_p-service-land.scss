@@ -1,0 +1,85 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+    .p-service-land{
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: calc((335 / 1366) * 100vw);
+            height: calc((121 / 1366) * 100vw);
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+        }
+        &__ttl{
+            font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
+            font-weight: bold;
+            line-height: calc(22/15);
+            text-align: center;
+        }
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .p-service-land{
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 8px;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: calc((287 / 393) * 100vw);
+            margin-left: auto;
+            margin-right: auto;
+            padding: calc((20 / 393) * 100vw);
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+
+            & + &{
+                margin-top: 6px;
+            }
+        }
+        &__ttl{
+            font-size: calc((14 / 393) * 100vw);
+            font-weight: bold;
+            line-height: calc(22/15);
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:769px) and ( max-width:1024px) {
+    .p-service-land{
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: 8px;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: calc((400 / 1366) * 100vw);
+            height: calc((121 / 1366) * 100vw);
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+        }
+        &__ttl{
+            font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
+            font-weight: bold;
+            line-height: calc(22/15);
+            text-align: center;
+        }
+    }
+}

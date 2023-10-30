@@ -1,0 +1,17 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .c-vertical-ttl{
+        font-size: unquote('min(calc((32 / 1366) * 100vw), 32px)');
+        font-weight: bold;
+        line-height: calc(50/32);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        &--gray{
+            background-color: #F7F7F7;
+            padding: 10px 5px;
+        }
+    }
+
+}

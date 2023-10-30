@@ -1,0 +1,24 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+
+    .p-contact-form{
+        width: calc(755 / 1366 * 100vw);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px calc(90 / 1366 * 100vw);
+        background-color: #fff;
+        &__links{
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        &__links-item{
+            width: calc(284 / 1366 * 100vw);
+        }
+        &__content{
+            margin-top: 30px;
+        }
+    }
+
+}

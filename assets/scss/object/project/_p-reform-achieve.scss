@@ -1,0 +1,92 @@
+@use "../../common/mixin";
+
+@media #{$break_point_pc}{
+    .p-reform-achieve{
+        position: relative;
+        &__list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, calc(315 / 1366 * 100vw));
+            justify-content: space-between;
+            row-gap: 30px;
+        }
+        &__item{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            background-color: #fff;
+            border-bottom: 2px solid #F2A700;
+        }
+        &__img{
+            line-height: 0;
+        }
+        &__hading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 24px;
+        }
+        &__tag{}
+        &__date{
+            font-size: unquote('min(calc((12 / 1366) * 100vw), 12px)');
+            color: #A5A5A5;
+        }
+        &__cont{
+            padding: 24px;
+            border-top: 2px dotted #C9C9C9;
+            font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
+            line-height: calc(24/15);
+        }
+        
+    }
+
+}
+
+@media #{$break_point_sp}{
+    .p-reform-achieve{
+        position: relative;
+        &__list{
+            justify-content: space-between;
+            row-gap: 30px;
+        }
+        &__item{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: calc(140 / 393 * 100vw) 1fr;
+            text-decoration: none;
+            background-color: #fff;
+            & + &{
+                margin-top: 8px;
+            }
+        }
+        &__img{
+            grid-row: 1 / 3; 
+            line-height: 0;
+        }
+        &__hading{
+            grid-row: 1 / 2; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: calc((10 / 393) * 100vw) calc((15 / 393) * 100vw);
+        }
+        &__date{
+            font-size: unquote('min(calc((12 / 393) * 100vw), 12px)');
+            color: #A5A5A5;
+        }
+        &__cont{
+            grid-row: 2 / 3;
+            max-height: calc((80 / 393) * 100vw);
+            padding: calc((10 / 393) * 100vw) calc((15 / 393) * 100vw);
+            border-top: 2px dotted #C9C9C9;
+            font-size: unquote('min(calc((13 / 393) * 100vw), 13px)');
+            line-height: calc(20/13);
+            overflow: hidden;
+            position: relative;
+        }
+        
+    }
+
+}
