@@ -27,7 +27,7 @@
             line-height: calc(30/18);
         }
         &__cont{
-            width: 100%;
+            width: calc((736 / 1366) * 100vw);
             padding: 24px;
             background-color: #fff;
             font-size: unquote('min(calc((13.6 / 1366) * 100vw), 14px)');

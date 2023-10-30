@@ -391,8 +391,16 @@ input, select {
 }
 
 @use "../common/mixin";
-.l-fv {
-  padding-top: calc(70 / 393 * 100vw);
+@media only screen and (min-width: 1025px) {
+  .l-fv {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .l-fv {
+    padding-top: calc(70 / 393 * 100vw);
+  }
 }
 
 @use "../common/mixin";
@@ -2084,7 +2092,7 @@ input, select {
     line-height: calc(30/18);
   }
   .p-service-info__cont {
-    width: 100%;
+    width: calc((736 / 1366) * 100vw);
     padding: 24px;
     background-color: #fff;
     font-size: min(calc((13.6 / 1366) * 100vw), 14px);
