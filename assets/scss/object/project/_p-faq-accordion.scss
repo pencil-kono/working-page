@@ -1,7 +1,6 @@
 @use "../../common/mixin";
 
 @media #{$break_point_pc}{
-
     .p-faq-accordion{
         width: calc((755 / 1366) * 100vw);
         margin-left: auto;
@@ -34,6 +33,18 @@
                 transform: rotate(45deg) translateY(50%);
                 transition: all 0.2s;
             }
+            &::before{
+                content: "Q";
+                display: inline-block;
+                width: calc((14 / 1366) * 100vw);
+                height: calc((14 / 1366) * 100vw);
+                font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+                font-weight: bold;
+                color: #27509B;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
             &.active{
                 &::after{
                     top: 50%;
@@ -47,13 +58,25 @@
             margin-top: 0;
             height: 0;
             overflow: hidden;
+            padding-left: calc((24 / 1366) * 100vw);
+            padding-right: calc((40 / 1366) * 100vw);
+            position: relative;
             transition: opacity 0.2s, height 0.2s, margin-top 0.2s;
+            &::before{
+                content: "A";
+                display: inline-block;
+                font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+                font-weight: bold;
+                color: #9B2727;
+                line-height: calc(20/15);
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
             &.active{
                 opacity: 1;
                 margin-top: 20px;
-                height: auto;
-                padding-left: calc((24 / 1366) * 100vw);
-                padding-right: calc((40 / 1366) * 100vw);
+                height: auto
             }
         }
         &__txt{
@@ -65,5 +88,89 @@
             }
         }
     }
+}
 
+@media #{$break_point_sp}{
+    .p-faq-accordion{
+        width: 100%;
+        &__item{
+            border: 1px solid #D1D1D1;
+            border-radius: 2px;
+            padding: calc((18 / 393) * 100vw) calc((16 / 393) * 100vw);
+            & + &{
+                margin-top: 8px;
+            }
+        }
+        &__ttl{
+            padding-left: calc((20 / 393) * 100vw);
+            font-size: unquote('min(calc((15 / 393) * 100vw), 15px)');
+            font-weight: bold;
+            line-height: calc(23/15);
+            color: #111;
+            position: relative;
+            &::before{
+                content: "Q";
+                display: inline-block;
+                font-weight: bold;
+                color: #27509B;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-bottom: solid 3px #F2A700;
+                border-right: solid 3px #F2A700;
+                border-radius: 2px;
+                position: absolute;
+                top: 0vw;
+                right: 1vw;
+                transform: rotate(45deg);
+                transition: all 0.2s;
+            }
+            &.active{
+                &::after{
+                    top: 2vw;
+                    right: 0.8vw;
+                    transform: rotate(225deg);
+                }
+            }
+        }
+        &__cont{
+            opacity: 0;
+            margin-top: 0;
+            height: 0;
+            overflow: hidden;
+            position: relative;
+            padding-left: calc((20 / 393) * 100vw);
+            padding-right: calc((40 / 393) * 100vw);
+            transition: opacity 0.2s, height 0.2s, margin-top 0.2s;
+            &.active{
+                opacity: 1;
+                margin-top: calc((16 / 393) * 100vw);
+                height: auto;
+            }
+            &::before{
+                content: "A";
+                display: inline-block;
+                font-weight: bold;
+                color: #9B2727;
+                line-height: calc(20/15);
+                position: absolute;
+                left: 0;
+                top: -2px;
+            }
+        }
+        &__txt{
+            font-size: unquote('min(calc((14 / 393) * 100vw), 14px)');
+            color: #656565;
+            line-height: calc(20/15);
+            & + &{
+                margin-top: 20px;
+            }
+        }
+    }
 }

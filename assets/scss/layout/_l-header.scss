@@ -49,8 +49,8 @@
     .l-header{
         display: flex;
         align-items: center;
-        width: 100vw;
-        height: 80px;
+        width: 100%;
+        height: calc(70 / 393 * 100vw);
         background-color: #fff;
         position: absolute;
         top: 0;
@@ -62,8 +62,8 @@
             display: flex;
             justify-content: space-between;
             width: 100vw;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: calc(15 / 393 * 100vw);
+            margin-right: calc(15 / 393 * 100vw);
         }
         &__logo{
             display: flex;

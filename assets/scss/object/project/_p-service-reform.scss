@@ -33,21 +33,19 @@
 
     .p-service-reform{
         &__list{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
             margin-top: 8px;
         }
         &__item{
-            width: calc((178 / 393) * 100vw);
             position: relative;
         }
         &__img{
             line-height: 0;
         }
         &__ttl{
-            font-size: unquote('min(calc((20 / 1366) * 100vw), 16px)');
+            font-size: unquote('min(calc((15 / 393) * 100vw), 15px)');
             font-weight: bold;
             line-height: calc(22/16);
             color: #fff;
