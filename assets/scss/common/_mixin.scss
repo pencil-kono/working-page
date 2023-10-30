@@ -8,28 +8,4 @@
 //		break point
 //==============================
 $break_point_pc: "only screen and (min-width:1025px)";
-// $break_point_tab: "only screen and (max-width:1024x)";
-// $break_point_sp: "only screen and (max-width:768px)";
 $break_point_sp: "only screen and (max-width:1024px)";
-
-//==============================
-//		img
-//==============================
-
-@media #{$break_point_pc}{
-}
-
-
-
-//==============================
-//		TAB
-//==============================
-// @media #{mixin.$break_point_tab}{
-// }
-
-
-//==============================
-//		SP
-//==============================
-@media #{$break_point_sp}{
-}
