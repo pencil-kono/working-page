@@ -602,7 +602,7 @@ input, select {
     background-color: #fff;
   }
   .c-button--mail {
-    padding-left: 2.196193265vw;
+    padding-left: 30px;
     border-color: #707070;
     color: #707070;
     position: relative;
@@ -610,13 +610,13 @@ input, select {
   .c-button--mail::before {
     content: "";
     display: inline-block;
-    width: 1.9033674963vw;
-    height: 1.2445095168vw;
+    width: 26px;
+    height: 17px;
     background-image: url(/assets/img/mail_icon.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: absolute;
-    left: 12.987012987%;
+    left: 1.756954612vw;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -627,18 +627,18 @@ input, select {
   .c-button--mail:hover::before {
     content: "";
     display: inline-block;
-    width: 1.9033674963vw;
-    height: 1.2445095168vw;
+    width: 26px;
+    height: 17px;
     background-image: url(/assets/img/mail_icon_white.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: absolute;
-    left: 12.987012987%;
+    left: 1.756954612vw;
     top: 50%;
     transform: translateY(-50%);
   }
   .c-button--line {
-    padding-left: 2.196193265vw;
+    padding-left: 30px;
     border-color: #06C755;
     color: #06C755;
     position: relative;
@@ -646,13 +646,13 @@ input, select {
   .c-button--line::before {
     content: "";
     display: inline-block;
-    width: 1.756954612vw;
-    height: 1.8301610542vw;
+    width: 24px;
+    height: 25px;
     background-image: url(/assets/img/line_icon.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: absolute;
-    left: 12.987012987%;
+    left: 1.756954612vw;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -663,13 +663,13 @@ input, select {
   .c-button--line:hover::before {
     content: "";
     display: inline-block;
-    width: 1.756954612vw;
-    height: 1.8301610542vw;
+    width: 24px;
+    height: 25px;
     background-image: url(/assets/img/line_icon_white.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: absolute;
-    left: 12.987012987%;
+    left: 1.756954612vw;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -856,6 +856,8 @@ input, select {
     color: #fff;
     background-color: #111;
     padding: 20px 0 20px 90px;
+    border: 2px solid #111;
+    box-sizing: border-box;
   }
   .c-jump-button--black::after {
     left: 60px;
@@ -864,6 +866,7 @@ input, select {
   }
   .c-jump-button--black:hover {
     background-color: #fff;
+    border: 2px solid #111;
     color: #111;
   }
   .c-jump-button--black:hover::after {
@@ -1055,12 +1058,13 @@ input, select {
     text-align: center;
     border-radius: 5px;
     background-color: #fff;
+    color: #111;
     position: relative;
+    transition: all 0.3s;
   }
   .c-card__name {
     font-size: min(calc((15 / 1366) * 100vw), 15px);
     font-weight: bold;
-    color: #111;
   }
   .c-card::after {
     content: "";
@@ -1072,6 +1076,13 @@ input, select {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+  .c-card:hover {
+    background-color: #F2A700;
+    color: #fff;
+  }
+  .c-card:hover::after {
+    border-color: transparent transparent #fff transparent;
   }
 }
 @media only screen and (max-width:768px) {
@@ -1865,7 +1876,8 @@ input, select {
     left: 0;
   }
   .p-kodawari-grid-list__desc {
-    width: 380px;
+    width: 27.8184480234vw;
+    min-width: 70%;
     height: 150px;
     padding: 24px;
     background-color: #fff;

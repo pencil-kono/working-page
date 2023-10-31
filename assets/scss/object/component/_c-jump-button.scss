@@ -41,6 +41,8 @@
             color: #fff;
             background-color: #111;
             padding: 20px 0 20px 90px;
+            border: 2px solid #111;
+            box-sizing: border-box;
             &::after{
                 left: 60px;
                 border-bottom: solid 2px #fff;
@@ -48,6 +50,7 @@
             }
             &:hover{
                 background-color: #fff;
+                border: 2px solid #111;
                 color: #111;
                 &::after{
                     border-bottom: solid 2px #111;

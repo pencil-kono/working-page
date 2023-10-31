@@ -8,11 +8,12 @@
         text-align: center;
         border-radius: 5px;
         background-color: #fff;
+        color: #111;
         position: relative;
+        transition: all 0.3s;
         &__name{
             font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
             font-weight: bold;
-            color: #111;
         }
         &::after{
             content: "";
@@ -24,6 +25,13 @@
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+        &:hover{
+            background-color: #F2A700;
+            color: #fff;
+            &::after{
+                border-color: transparent transparent #fff transparent;
+            }
         }
     }
 }

@@ -28,7 +28,8 @@
             }
         }
         &__desc{
-            width: 380px;
+            width: calc((380 / 1366) * 100vw);
+            min-width: 70%;
             height: 150px;
             padding: 24px;
             background-color: #fff;
