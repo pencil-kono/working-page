@@ -2,10 +2,10 @@
 
 @media #{$break_point_pc}{
     .p-contact-form{
-        width: calc(755 / 1366 * 100vw);
+        width: 755px;
         margin-left: auto;
         margin-right: auto;
-        padding: 50px calc(90 / 1366 * 100vw);
+        padding: 50px 90px;
         background-color: #fff;
         &__links{
             display: flex;
@@ -13,7 +13,7 @@
             gap: 15px;
         }
         &__links-item{
-            width: calc(284 / 1366 * 100vw);
+            width: 284px;
         }
         &__content{
             margin-top: 30px;
@@ -31,7 +31,26 @@
             gap: 12px;
         }
         &__content{
-            margin-top: calc(30 / 393 * 100vw);
+            margin-top: 30px;
+        }
+    }
+}
+
+@media #{$break_point_tab}{
+    .p-contact-form{
+        padding: 40px 50px;
+        background-color: #fff;
+        &__links{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__links-item{
+            width: 100%;
+        }
+        &__content{
+            margin-top: 30px;
         }
     }
 }

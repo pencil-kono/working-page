@@ -11,7 +11,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: calc((335 / 1366) * 100vw);
+            width: 335px;
             height: calc((121 / 1366) * 100vw);
             border: 1px solid #D1D1D1;
             box-sizing: border-box;
@@ -25,8 +25,7 @@
     }
 }
 
-
-@media only screen and (max-width:768px){
+@media #{$break_point_sp}{
     .p-service-land{
         &__list{
             display: flex;
@@ -58,7 +57,7 @@
     }
 }
 
-@media screen and (min-width:769px) and ( max-width:1024px) {
+@media #{$break_point_tab}{
     .p-service-land{
         &__list{
             display: flex;

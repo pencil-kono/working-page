@@ -5,8 +5,8 @@
         display: flex;
         justify-content: space-between;
         &__item{
-            width: calc((300 / 1366) * 100vw);
-            padding: 50px calc((24 / 1366) * 100vw);
+            width: 300px;
+            padding: 50px 24px;
             border: 1px solid #D1D1D1;
         }
         &__item{
@@ -18,7 +18,7 @@
             text-align: center;
         }
         &__cont{
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
             line-height: calc(26/16);
             color: #656565;
@@ -26,8 +26,7 @@
     }
 }
 
-
-@media only screen and (max-width:768px){
+@media #{$break_point_sp}{
     .p-strength-list{
         &__item{
             display: flex;
@@ -64,7 +63,7 @@
     }
 }
 
-@media screen and (min-width:769px) and ( max-width:1024px) {
+@media #{$break_point_tab}{
     .p-strength-list{
         display: flex;
         justify-content: space-between;

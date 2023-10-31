@@ -9,7 +9,12 @@
 }
 
 @media #{$break_point_sp}{
+    .l-main{
+        overflow: hidden;
+    }
+}
 
+@media #{$break_point_tab}{
     .l-main{
         overflow: hidden;
     }

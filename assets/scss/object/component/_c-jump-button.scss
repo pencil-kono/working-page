@@ -6,14 +6,16 @@
         display: flex;
         align-items: center;
         box-sizing: border-box;
-        padding: 20px 0 20px calc((70 / 1366) * 100vw);
+        padding: 20px 0 20px 70px;
         border-radius: 50px;
         font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
         font-weight: bold;
         text-decoration: none;
         border: none;
+        color: #111;
         background-color: #fff;
         position: relative;
+        transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
         &::after{
             content: "";
             display: inline-block;
@@ -23,18 +25,34 @@
             border-right: solid 2px #111;
             border-radius: 2px;
             position: absolute;
-            left: calc((40 / 1366) * 100vw );
+            left: 40px;
             top: 38%;
             transform: rotate(-45deg) translateY(50%);
+        }
+        &:hover{
+            background-color: #111;
+            color: #fff;
+            &::after{
+                border-bottom: solid 2px #fff;
+                border-right: solid 2px #fff;
+            }
         }
         &--black{
             color: #fff;
             background-color: #111;
-            padding: 20px 0 20px calc((90 / 1366) * 100vw);
+            padding: 20px 0 20px 90px;
             &::after{
-                left: calc((60 / 1366) * 100vw );
+                left: 60px;
                 border-bottom: solid 2px #fff;
                 border-right: solid 2px #fff;
+            }
+            &:hover{
+                background-color: #fff;
+                color: #111;
+                &::after{
+                    border-bottom: solid 2px #111;
+                    border-right: solid 2px #111;
+                }
             }
         }
         &:hover{
@@ -44,7 +62,7 @@
     }
 }
 
-@media only screen and (max-width:768px){
+@media #{$break_point_sp}{
     .c-jump-button{
         width: 100%;
         display: flex;
@@ -84,15 +102,15 @@
     }
 }
 
-@media screen and (min-width:769px) and ( max-width:1024px) {
+@media #{$break_point_tab}{
     .c-jump-button{
         width: 100%;
         display: flex;
         align-items: center;
         box-sizing: border-box;
-        padding: 20px 0 20px calc((120/ 1366) * 100vw);
+        padding: 20px 0 20px 70px;
         border-radius: 50px;
-        font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+        font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
         font-weight: bold;
         text-decoration: none;
         border: none;
@@ -107,23 +125,19 @@
             border-right: solid 2px #111;
             border-radius: 2px;
             position: absolute;
-            left: calc((60 / 1366) * 100vw );
+            left: 40px;
             top: 38%;
             transform: rotate(-45deg) translateY(50%);
         }
         &--black{
             color: #fff;
             background-color: #111;
-            padding: 20px 0 20px calc((90 / 1366) * 100vw);
+            padding: 20px 0 20px 90px;
             &::after{
-                left: calc((60 / 1366) * 100vw );
+                left: 60px;
                 border-bottom: solid 2px #fff;
                 border-right: solid 2px #fff;
             }
-        }
-        &:hover{
-            opacity: 0.7;
-            cursor: pointer;
         }
     }
 }

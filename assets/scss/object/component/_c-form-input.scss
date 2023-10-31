@@ -26,3 +26,16 @@
         }
     }
 }
+
+@media #{$break_point_tab}{
+    .c-form-input{
+        padding: 15px 20px;
+        background-color: #F7F7F7;
+        border: none;
+        line-height: 1.4;
+        min-height: 56px;
+        &::placeholder{
+            color: #BFBFBF;
+        }
+    }
+}

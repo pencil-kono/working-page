@@ -11,45 +11,45 @@
             position: relative;
         }
         &__ttl{
-            padding-left: calc((40 / 1366) * 100vw);
+            padding-left: 40px;
             position: absolute;
-            left: calc((15 / 1366) * 100vw);
-            top: calc((40 / 1366) * 100vw);
+            left: 15px;
+            top: 40px;
             color: #fff;
             font-size: unquote('min(calc((30 / 1366) * 100vw), 30px)');
             &::before{
                 content: "";
-                width: calc((27 / 1366) * 100vw);
+                width: 27px;
                 height: 1px;
                 background-color: #fff;
                 position: absolute;
-                top: calc((12 / 1366) * 100vw);
+                top: 12px;
                 left: 0;
             }
         }
         &__desc{
-            width: calc((380 / 1366) * 100vw);
-            height: calc((150 / 1366) * 100vw);
-            padding: calc((24 / 1366) * 100vw);
+            width: 380px;
+            height: 150px;
+            padding: 24px;
             background-color: #fff;
             border-radius: 5px;
-            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
             line-height: calc(24/16);
             position: absolute;
             left: 50%;
-            bottom: calc((20 / 1366) * 100vw);
+            bottom: 20px;
             transform: translateX(-50%);
         }
     }
 }
 
-@media only screen and (max-width:768px){
+@media #{$break_point_sp}{
     .p-kodawari-grid-list{
         width: 100%;
         &__item{
             position: relative;
             & + &{
-                margin-top: calc((18 / 393) * 100vw);
+                margin-top: 18px;
             }
         }
         &__ttl{
@@ -58,7 +58,7 @@
             left: calc((12 / 393) * 100vw);
             top: calc((40 / 393) * 100vw);
             color: #fff;
-            font-size: calc((30 / 393) * 100vw);
+            font-size:  unquote('min(calc((30 / 393) * 100vw), 30px)');
             &::before{
                 content: "";
                 width: calc((27 / 393) * 100vw);
@@ -74,7 +74,7 @@
             padding: calc((12 / 393) * 100vw);
             background-color: #fff;
             border-radius: 5px;
-            font-size: calc((16 / 393) * 100vw);
+            font-size: unquote('min(calc((16 / 393) * 100vw), 16px)');
             line-height: calc(24/16);
             position: absolute;
             left: 50%;
@@ -84,7 +84,7 @@
     }
 }
 
-@media screen and (min-width:769px) and ( max-width:1024px) {
+@media #{$break_point_tab}{
     .p-kodawari-grid-list{
         width: 100%;
         display: grid;

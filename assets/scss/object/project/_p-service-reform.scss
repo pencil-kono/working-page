@@ -8,7 +8,7 @@
             margin-top: 8px;
         }
         &__item{
-            width: calc((246 / 1366) * 100vw);
+            width: 246px;
             position: relative;
         }
         &__img{
@@ -27,7 +27,6 @@
         }
     }
 }
-
 
 @media #{$break_point_sp}{
 
@@ -58,4 +57,32 @@
     }
     
 
+}
+
+@media #{$break_point_tab}{
+    .p-service-reform{
+        &__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        &__item{
+            position: relative;
+        }
+        &__img{
+            line-height: 0;
+        }
+        &__ttl{
+            font-size: unquote('min(calc((15 / 393) * 100vw), 15px)');
+            font-weight: bold;
+            line-height: calc(22/16);
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }

@@ -69,7 +69,7 @@ function compileScss() {
     .pipe( using({prefix:'コンパイル前：'}) )
     .pipe(dartSass({
 			// アウトプットスタイル設定 //expanded, nested, campact, compressedから選択
-      outputStyle: 'compressed'
+      outputStyle: 'expanded'
     }))
     .pipe(autoprefixer({
       cascade: true

@@ -7,12 +7,12 @@
         position: relative;
         &::after{
             content: "";
-            height: calc(((48 / 2) / 1366) * 100vw);
-            width: calc((70 / 1366) * 100vw);
+            height: 48px;
+            width: 70px;
             clip-path: polygon(0 0, 100% 0, 50% 100%);
             background-color: #F7F7F7;
             position: absolute;
-            left: calc((130 / 1366) * 100vw);
+            left: 130px;
             top: -32px;
         }
         &__inner{
@@ -27,7 +27,7 @@
             line-height: calc(30/18);
         }
         &__cont{
-            width: calc((736 / 1366) * 100vw);
+            width: 736px;
             padding: 24px;
             background-color: #fff;
             font-size: unquote('min(calc((13.6 / 1366) * 100vw), 14px)');
@@ -39,7 +39,6 @@
     }
 }
 
-
 @media #{$break_point_sp}{
     .p-service-info{
         background-color: #F7F7F7;
@@ -47,7 +46,7 @@
         &__inner{
             display: flex;
             flex-direction: column;
-            padding: calc((20 / 393) * 100vw) calc((12 / 393) * 100vw) calc((12 / 393) * 100vw) calc((12 / 393) * 100vw);
+            padding: 20px calc((12 / 393) * 100vw) 12px calc((12 / 393) * 100vw);
         }
         &__ttl{
             font-size: unquote('min(calc((18 / 393) * 100vw), 18px)');
@@ -57,7 +56,35 @@
         }
         &__cont{
             width: calc((334 / 393) * 100vw);
-            margin-top: calc((15 / 393) * 100vw);
+            margin-top: 15px;
+            padding: calc((20 / 393) * 100vw);
+            background-color: #fff;
+            font-size: unquote('min(calc((14 / 393) * 100vw), 14px)');
+            line-height: calc(26/14);
+            &--bold{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media #{$break_point_tab}{
+    .p-service-info{
+        background-color: #F7F7F7;
+        position: relative;
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            padding: 20px calc((12 / 393) * 100vw) 12px calc((12 / 393) * 100vw);
+        }
+        &__ttl{
+            font-size: unquote('min(calc((18 / 393) * 100vw), 18px)');
+            font-weight: bold;
+            line-height: calc(30/18);
+            text-align: center;
+        }
+        &__cont{
+            margin-top: 15px;
             padding: calc((20 / 393) * 100vw);
             background-color: #fff;
             font-size: unquote('min(calc((14 / 393) * 100vw), 14px)');

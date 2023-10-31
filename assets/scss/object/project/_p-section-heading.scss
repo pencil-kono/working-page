@@ -4,10 +4,10 @@
     .p-section-heading{
         &--marker{
             position: relative;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
             &::after{
                 content: "";
-                width: calc((35 / 1366) * 100vw);
+                width: 35px;
                 height: 2px;
                 background-color: #F2A700;
                 position: absolute;
@@ -23,10 +23,29 @@
     .p-section-heading{
         &--marker{
             position: relative;
-            padding-bottom: calc((20 / 393) * 100vw);
+            padding-bottom: 15px;
             &::after{
                 content: "";
                 width: calc((35 / 393) * 100vw);
+                height: 2px;
+                background-color: #F2A700;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+@media #{$break_point_tab}{
+    .p-section-heading{
+        &--marker{
+            position: relative;
+            padding-bottom: 15px;
+            &::after{
+                content: "";
+                width: 35px;
                 height: 2px;
                 background-color: #F2A700;
                 position: absolute;

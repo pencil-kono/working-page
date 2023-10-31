@@ -1,9 +1,8 @@
 @use "../../common/mixin";
 
 @media #{$break_point_pc}{
-
     .p-fv{
-        width: calc(1334 / 1366 * 100vw);
+        width: 1334px;
         margin-left: auto;
         margin-right: auto;
         &__inner{
@@ -11,19 +10,18 @@
         }
         &__back{}
         &__ttl{
-            width: calc(220 / 1366 * 100vw);
+            width: 220px;
             position: absolute;
-            left: calc(160 / 1366 * 100vw);
-            top: calc(110 / 1366 * 100vw);
+            left: 160px;
+            top: 110px;
         }
         &__icon{
-            width: calc(222 / 1366 * 100vw);
+            width: 222px;
             position: absolute;
-            right: calc(160 / 1366 * 100vw);
-            top: calc(70 / 1366 * 100vw);
+            right: 160px;
+            top: 70px;
         }
     }
-
 }
 
 
@@ -42,6 +40,28 @@
         }
         &__icon{
             width: calc(150/ 393 * 100vw);
+            position: absolute;
+            right: calc(20 / 393 * 100vw);
+            top: calc(70 / 393 * 100vw);
+        }
+    }
+
+}
+
+@media #{$break_point_tab}{
+
+    .p-fv{
+        &__inner{
+            position: relative;
+        }
+        &__ttl{
+            width: 300px;
+            position: absolute;
+            left: calc(16 / 393 * 100vw);
+            top: calc(100 / 393 * 100vw);
+        }
+        &__icon{
+            width: 150px;
             position: absolute;
             right: calc(20 / 393 * 100vw);
             top: calc(70 / 393 * 100vw);

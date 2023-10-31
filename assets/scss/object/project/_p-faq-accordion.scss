@@ -2,19 +2,19 @@
 
 @media #{$break_point_pc}{
     .p-faq-accordion{
-        width: calc((755 / 1366) * 100vw);
+        width: 755px;
         margin-left: auto;
         margin-right: auto;
         &__item{
             border: 1px solid #D1D1D1;
             border-radius: 2px;
-            padding: calc((20 / 1366) * 100vw);
+            padding: 20px;
             & + &{
                 margin-top: 8px;
             }
         }
         &__ttl{
-            padding-left: calc((24 / 1366) * 100vw);
+            padding-left: 24px;
             font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
             font-weight: bold;
             color: #111;
@@ -22,8 +22,8 @@
             &::after{
                 content: "";
                 display: inline-block;
-                width: calc((14 / 1366) * 100vw);
-                height: calc((14 / 1366) * 100vw);
+                width: 14px;
+                height: 14px;
                 border-bottom: solid 3px #F2A700;
                 border-right: solid 3px #F2A700;
                 border-radius: 2px;
@@ -36,8 +36,8 @@
             &::before{
                 content: "Q";
                 display: inline-block;
-                width: calc((14 / 1366) * 100vw);
-                height: calc((14 / 1366) * 100vw);
+                width: 14px;
+                height: 14px;
                 font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
                 font-weight: bold;
                 color: #27509B;
@@ -58,8 +58,8 @@
             margin-top: 0;
             height: 0;
             overflow: hidden;
-            padding-left: calc((24 / 1366) * 100vw);
-            padding-right: calc((40 / 1366) * 100vw);
+            padding-left: 24px;
+            padding-right: 24px;
             position: relative;
             transition: opacity 0.2s, height 0.2s, margin-top 0.2s;
             &::before{
@@ -96,7 +96,7 @@
         &__item{
             border: 1px solid #D1D1D1;
             border-radius: 2px;
-            padding: calc((18 / 393) * 100vw) calc((16 / 393) * 100vw);
+            padding: 18px calc((16 / 393) * 100vw);
             & + &{
                 margin-top: 8px;
             }
@@ -166,6 +166,96 @@
         }
         &__txt{
             font-size: unquote('min(calc((14 / 393) * 100vw), 14px)');
+            color: #656565;
+            line-height: calc(20/15);
+            & + &{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media #{$break_point_tab}{
+    .p-faq-accordion{
+        width: 755px;
+        margin-left: auto;
+        margin-right: auto;
+        &__item{
+            border: 1px solid #D1D1D1;
+            border-radius: 2px;
+            padding: 20px;
+            & + &{
+                margin-top: 8px;
+            }
+        }
+        &__ttl{
+            padding-left: 24px;
+            font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
+            font-weight: bold;
+            color: #111;
+            position: relative;
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-bottom: solid 3px #F2A700;
+                border-right: solid 3px #F2A700;
+                border-radius: 2px;
+                position: absolute;
+                right: 0;
+                top: -50%;
+                transform: rotate(45deg) translateY(50%);
+                transition: all 0.2s;
+            }
+            &::before{
+                content: "Q";
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
+                font-weight: bold;
+                color: #27509B;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &.active{
+                &::after{
+                    top: 50%;
+                    right: 0.8vw;
+                    transform: rotate(225deg) translateY(50%);
+                }
+            }
+        }
+        &__cont{
+            opacity: 0;
+            margin-top: 0;
+            height: 0;
+            overflow: hidden;
+            padding-left: 24px;
+            padding-right: 24px;
+            position: relative;
+            transition: opacity 0.2s, height 0.2s, margin-top 0.2s;
+            &::before{
+                content: "A";
+                display: inline-block;
+                font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
+                font-weight: bold;
+                color: #9B2727;
+                line-height: calc(20/15);
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &.active{
+                opacity: 1;
+                margin-top: 20px;
+                height: auto
+            }
+        }
+        &__txt{
+            font-size: unquote('max(calc((14 / 1366) * 100vw), 14px)');
             color: #656565;
             line-height: calc(20/15);
             & + &{

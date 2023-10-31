@@ -5,15 +5,15 @@
         font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
         font-weight: bold;
         &--require{
-            padding-left: calc((60 / 1366) * 100vw);
+            padding-left: 60px;
             position: relative;
             &::before{
                 content: "必須";
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: calc((50 / 1366) * 100vw);
-                height: calc((18 / 1366) * 100vw);
+                width: 50px;
+                height: 18px;
                 color: #fff;
                 font-size: unquote('min(calc((12 / 1366) * 100vw), 12px)');
                 font-weight: bold;
@@ -31,7 +31,6 @@
         }
     }
 }
-
 
 @media #{$break_point_sp}{
     .c-form-label{
@@ -63,5 +62,37 @@
             font-weight: normal;
         }
 
+    }
+}
+
+@media #{$break_point_tab}{
+    .c-form-label{
+        font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
+        font-weight: bold;
+        &--require{
+            padding-left: 60px;
+            position: relative;
+            &::before{
+                content: "必須";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 18px;
+                color: #fff;
+                font-size: unquote('max(calc((12 / 1366) * 100vw), 12px)');
+                font-weight: bold;
+                line-height: 1;
+                background-color: #9B2727;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &--small{
+            font-size: unquote('max(calc((14 / 1366) * 100vw), 14px)');
+            font-weight: normal;
+        }
     }
 }

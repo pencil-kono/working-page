@@ -2,8 +2,8 @@
 
 @media #{$break_point_pc}{
     .c-form-textarea{
-        min-height: calc((230 / 1366) * 100vw);
-        padding: 15px calc((20 / 1366) * 100vw);
+        min-height: 230px;
+        padding: 15px 20px;
         background-color: #F7F7F7;
         border: none;
         &::placeholder{
@@ -16,6 +16,18 @@
     .c-form-textarea{
         min-height: calc((230 / 393) * 100vw);
         padding: calc((15 / 393) * 100vw) calc((20 / 393) * 100vw);
+        background-color: #F7F7F7;
+        border: none;
+        &::placeholder{
+            color: #BFBFBF;
+        }
+    }
+}
+
+@media #{$break_point_tab}{
+    .c-form-textarea{
+        min-height: 150px;
+        padding: 15px 20px;
         background-color: #F7F7F7;
         border: none;
         &::placeholder{

@@ -1,5 +1,19 @@
 @use "../common/mixin";
 
-.l-concept{
-    margin-top: 40px;
+@media #{$break_point_pc}{
+    .l-concept{
+        margin-top: 40px;
+    }
+}
+
+@media #{$break_point_sp}{
+    .l-concept{
+        margin-top: 40px;
+    }
+}
+
+@media #{$break_point_tab}{
+    .l-concept{
+        margin-top: 40px;
+    }
 }

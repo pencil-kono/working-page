@@ -23,11 +23,14 @@
 //==============================
 //		SP
 //==============================
-@media #{$break_point_sp}{
+@media #{$break_point_tab}{
     .pc_only{
         display: none;
     }
     .sp_only{
+        display: block;
+    }
+    .tab_only{
         display: block;
     }
 
@@ -40,3 +43,25 @@
         width: 100%;
     }
 }
+
+@media #{$break_point_sp}{
+    .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+    .tab_only{
+        display: none;
+    }
+
+    body{
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #fff;
+    }
+    
+    img{
+        width: 100%;
+    }
+}
+

@@ -3,12 +3,12 @@
 @media #{$break_point_pc}{
     .p-reform-tags{
         &__list{
-            display: flex;
-            flex-wrap: wrap;
-            gap: calc(10 / 1366 * 100vw);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
         }
         &__item{
-            width: calc(196 / 1366 * 100vw);
+            width: 196px;
         }
     }
 }
@@ -27,4 +27,16 @@
         }
     }
 
+}
+
+@media #{$break_point_tab}{
+    .p-reform-tags{
+        &__list{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        &__item{
+        }
+    }
 }

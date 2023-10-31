@@ -23,3 +23,15 @@
         text-align: center;
     }
 }
+
+@media #{$break_point_tab}{
+    .c-section-subttl{
+        width: 100%;
+        padding: 15px 0;
+        font-size: unquote('max(calc((20 / 1366) * 100vw), 20px)');
+        font-weight: bold;
+        color: #111;
+        background-color: #F7F7F7;
+        text-align: center;
+    }
+}

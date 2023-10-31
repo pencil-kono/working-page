@@ -7,12 +7,32 @@
         }
         &__txt{
             margin-top: 20px;
-            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-size: 16px;
             line-height: calc(32/16);
             text-align: center;
         }
         &__img{
-            width: calc((190 / 1366) * 100vw);
+            width: 190px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media #{$break_point_tab}{
+    .p-concept{
+        &__inner{
+            position: relative;
+        }
+        &__txt{
+            margin-top: 20px;
+            font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
+            line-height: calc(32/16);
+            text-align: center;
+        }
+        &__img{
+            width: 190px;
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
@@ -22,23 +42,24 @@
 
 @media #{$break_point_sp}{
     .p-concept{
-        margin-left: calc((15 / 393) * 100vw);
-        margin-right: calc((15 / 393) * 100vw);
+        margin-left: 16px;
+        margin-right: 16px;
         &__inner{
             position: relative;
         }
         &__txt{
-            margin-top: calc((30 / 393) * 100vw);
+            margin-top: 20px;
             font-size: unquote('min(calc((16 / 393) * 100vw), 16px)');
             line-height: calc(32/16);
             text-align: center;
         }
         &__img{
             width: calc((195 / 393) * 100vw);
-            margin-top: calc((30 / 393) * 100vw);
+            margin-top: 30px;
             margin-left: auto;
             margin-right: auto;
         }
     }
 
 }
+
