@@ -1,7 +1,6 @@
 @use "../../common/mixin";
 
 @media #{$break_point_pc}{
-
     .p-news{
         width: calc( 868 / 1366 * 100vw);
         border: 8px solid #F7F7F7;
@@ -39,16 +38,18 @@
             & + &{
                 margin-top: 20px;
             }
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
         &__date{
             width: 100%;
             color: #656565;
         }
-        &__name{
-            
-        }
-    }
+        &__name{}
 
+    }
 }
 
 @media #{$break_point_sp}{

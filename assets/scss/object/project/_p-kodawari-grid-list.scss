@@ -28,10 +28,10 @@
             }
         }
         &__desc{
-            width: calc((380 / 1366) * 100vw);
-            min-width: 70%;
-            min-height: 30%;
-            padding: 24px;
+            width: calc((382 / 1366) * 100vw);
+            min-height: 151px;
+            height: calc((151 / 1366) * 100vw);
+            padding: calc((24 / 1366) * 100vw);
             background-color: #fff;
             border-radius: 5px;
             font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');

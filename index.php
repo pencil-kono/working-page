@@ -51,7 +51,7 @@
 	</script>
 	<!-- ===== /JSON-LD ===== -->
 
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 </head>
 
 <body>
@@ -112,15 +112,15 @@
             <div class="p-fv__inner">
                 <p class="p-fv__back">
                     <picture>
-                        <source type="image/jpg" media="(min-width:769px)" srcset="./assets/img/fv.jpg">
-                        <source type="image/jpg" media="(max-width:768px)" srcset="./assets/img/sp/fv.jpg">
+                        <source type="image/jpg" media="(min-width:769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/fv.jpg">
+                        <source type="image/jpg" media="(max-width:768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/fv.jpg">
                         <img src="./assets/img/fv.jpg" alt="">
                     </picture>
                 </p>
                 <p class="p-fv__ttl">
                     <picture>
-                        <source type="image/png" media="(min-width:769px)" srcset="./assets/img/fv_title.png">
-                        <source type="image/png" media="(max-width:768px)" srcset="./assets/img/sp/fv_title.png">
+                        <source type="image/png" media="(min-width:769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/fv_title.png">
+                        <source type="image/png" media="(max-width:768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/fv_title.png">
                         <img src="./assets/img/fv_title.png" alt="">
                     </picture>
                 </p>
@@ -189,8 +189,8 @@
                     <div class="p-kodawari-grid-list__item">
                         <p class="p-kodawari-grid-list__img">
                             <picture>
-                                <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/kodawari_img_01.png">
-                                <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/kodawari_img_01.png">
+                                <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_01.png">
+                                <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_01.png">
                                 <img src="./assets/img/kodawari_img_01.png" alt="">
                             </picture>
                         </p>
@@ -200,8 +200,8 @@
                     <div class="p-kodawari-grid-list__item">
                         <p class="p-kodawari-grid-list__img">
                             <picture>
-                                <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/kodawari_img_02.png">
-                                <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/kodawari_img_02.png">
+                                <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_02.png">
+                                <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_02.png">
                                 <img src="./assets/img/kodawari_img_02.png" alt="">
                             </picture>
                         </p>
@@ -211,8 +211,8 @@
                     <div class="p-kodawari-grid-list__item">
                         <p class="p-kodawari-grid-list__img">
                             <picture>
-                                <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/kodawari_img_03.jpg">
-                                <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/kodawari_img_03.jpg">
+                                <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg">
+                                <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg">
                                 <img src="./assets/img/kodawari_img_03.jpg" alt="">
                             </picture>
                         </p>
@@ -222,8 +222,8 @@
                     <div class="p-kodawari-grid-list__item">
                         <p class="p-kodawari-grid-list__img">
                             <picture>
-                                <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/kodawari_img_04.png">
-                                <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/kodawari_img_04.png">
+                                <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_04.png">
+                                <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_04.png">
                                 <img src="./assets/img/kodawari_img_04.png" alt="">
                             </picture>
                         </p>
@@ -360,8 +360,8 @@
                         <a href="#" class="p-reform-achieve__item">
                             <p class="p-reform-achieve__img">
                                 <picture>
-                                    <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/reform_img.png">
-                                    <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/reform_img.png">
+                                    <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
+                                    <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
                                     <img src="./assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
@@ -376,8 +376,8 @@
                         <a href="#" class="p-reform-achieve__item">
                             <p class="p-reform-achieve__img">
                                 <picture>
-                                    <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/reform_img.png">
-                                    <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/reform_img.png">
+                                    <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
+                                    <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
                                     <img src="./assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
@@ -392,8 +392,8 @@
                         <a href="#" class="p-reform-achieve__item">
                             <p class="p-reform-achieve__img">
                                 <picture>
-                                    <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/reform_img.png">
-                                    <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/reform_img.png">
+                                    <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
+                                    <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
                                     <img src="./assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
@@ -408,8 +408,8 @@
                         <a href="#" class="p-reform-achieve__item">
                             <p class="p-reform-achieve__img">
                                 <picture>
-                                    <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/reform_img.png">
-                                    <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/reform_img.png">
+                                    <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
+                                    <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
                                     <img src="./assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
@@ -424,8 +424,8 @@
                         <a href="#" class="p-reform-achieve__item">
                             <p class="p-reform-achieve__img">
                                 <picture>
-                                    <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/reform_img.png">
-                                    <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/reform_img.png">
+                                    <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
+                                    <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
                                     <img src="./assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
@@ -440,8 +440,8 @@
                         <a href="#" class="p-reform-achieve__item">
                             <p class="p-reform-achieve__img">
                                 <picture>
-                                    <source type="image/png" media="(min-width:1025px)" srcset="./assets/img/reform_img.png" alt="">
-                                    <source type="image/png" media="(max-width:1024px)" srcset="./assets/img/sp/reform_img.png" alt="">
+                                    <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
+                                    <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png" alt="">
                                     <img src="./assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
@@ -782,7 +782,7 @@
     </footer>
 
     
-	<script src="./assets/js/script.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
 
 </body>
 </html>
