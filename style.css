@@ -1878,7 +1878,7 @@ input, select {
   .p-kodawari-grid-list__desc {
     width: 27.8184480234vw;
     min-width: 70%;
-    height: 150px;
+    min-height: 30%;
     padding: 24px;
     background-color: #fff;
     border-radius: 5px;
@@ -2285,7 +2285,7 @@ input, select {
 @media only screen and (max-width:768px) {
   .p-reform {
     background-color: #F7F7F7;
-    padding: 55px;
+    padding: 55px 0;
   }
   .p-reform__inner {
     margin-left: 16px;
