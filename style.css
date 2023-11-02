@@ -2542,6 +2542,7 @@ body {
     font-size: 16px;
     line-height: 1.625;
     color: #656565;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   }
 }
 @media only screen and (max-width:768px) {
@@ -2576,6 +2577,7 @@ body {
     font-size: min(calc((16 / 393) * 100vw), 16px);
     line-height: 1.625;
     color: #656565;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   }
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
@@ -2599,6 +2601,7 @@ body {
     font-size: min(calc((16 / 393) * 100vw), 16px);
     line-height: 1.625;
     color: #656565;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   }
 }
 @media only screen and (min-width:1025px) {
