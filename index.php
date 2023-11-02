@@ -60,7 +60,7 @@
     <header class="l-header show">
         <div class="l-header__inner">
             <a href="/" class="l-header__logo">
-                <img src="./assets/img/logo.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
             </a>
             <div class="l-header__links pc_only">
                 <p class="l-header__links-item l-header__links-item--mail">
@@ -114,18 +114,18 @@
                     <picture>
                         <source type="image/jpg" media="(min-width:769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/fv.jpg">
                         <source type="image/jpg" media="(max-width:768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/fv.jpg">
-                        <img src="./assets/img/fv.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fv.jpg" alt="">
                     </picture>
                 </p>
                 <p class="p-fv__ttl">
                     <picture>
                         <source type="image/png" media="(min-width:769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/fv_title.png">
                         <source type="image/png" media="(max-width:768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/fv_title.png">
-                        <img src="./assets/img/fv_title.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fv_title.png" alt="">
                     </picture>
                 </p>
                 <p class="p-fv__icon">
-                    <img src="./assets/img/fv_icon.png" alt="地域密着だから現地調査0円">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fv_icon.png" alt="地域密着だから現地調査0円">
                 </p>
             </div>
         </section>
@@ -168,7 +168,7 @@
                     世田谷区・大田区の地域に密着して<br class="sp_only">リフォームに取り組んでいます。
                 </p>
                 <p class="p-concept__img">
-                    <img src="./assets/img/concept_img.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/concept_img.png" alt="">
                 </p>
             </div>
         </section>
@@ -191,7 +191,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_01.png">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_01.png">
-                                <img src="./assets/img/kodawari_img_01.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_01.png" alt="">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">提案力</p>
@@ -202,7 +202,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_02.png">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_02.png">
-                                <img src="./assets/img/kodawari_img_02.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_02.png" alt="">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">材料仕入れ力</p>
@@ -213,7 +213,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg">
-                                <img src="./assets/img/kodawari_img_03.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg" alt="">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">リフォーム力</p>
@@ -224,7 +224,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_04.png">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_04.png">
-                                <img src="./assets/img/kodawari_img_04.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_04.png" alt="">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">末永い<br class="sp_only">お付き合い力</p>
@@ -248,25 +248,25 @@
                         <div class="p-service-reform__item">
                             <p class="p-service-reform__ttl">戸建て<br>リフォーム</p>
                             <p class="p-service-reform__img">
-                                <img src="./assets/img/service_img_01.jpg" alt="戸建てリフォーム">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service_img_01.jpg" alt="戸建てリフォーム">
                             </p>
                         </div>
                         <div class="p-service-reform__item">
                             <p class="p-service-reform__ttl">マンション<br>リフォーム</p>
                             <p class="p-service-reform__img">
-                                <img src="./assets/img/service_img_02.jpg" alt="マンションリフォーム">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service_img_02.jpg" alt="マンションリフォーム">
                             </p>
                         </div>
                         <div class="p-service-reform__item">
                             <p class="p-service-reform__ttl">店舗<br>リフォーム</p>
                             <p class="p-service-reform__img">
-                                <img src="./assets/img/service_img_03.jpg" alt="店舗リフォーム">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service_img_03.jpg" alt="店舗リフォーム">
                             </p>
                         </div>
                         <div class="p-service-reform__item">
                             <p class="p-service-reform__ttl">オフィス<br>リフォーム</p>
                             <p class="p-service-reform__img">
-                                <img src="./assets/img/service_img_04.jpg" alt="オフィスリフォーム">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service_img_04.jpg" alt="オフィスリフォーム">
                             </p>
                         </div>
                     </div>
@@ -362,7 +362,7 @@
                                 <picture>
                                     <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
                                     <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
-                                    <img src="./assets/img/reform_img.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
                             <div class="p-reform-achieve__hading">
@@ -378,7 +378,7 @@
                                 <picture>
                                     <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
                                     <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
-                                    <img src="./assets/img/reform_img.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
                             <div class="p-reform-achieve__hading">
@@ -394,7 +394,7 @@
                                 <picture>
                                     <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
                                     <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
-                                    <img src="./assets/img/reform_img.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
                             <div class="p-reform-achieve__hading">
@@ -410,7 +410,7 @@
                                 <picture>
                                     <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
                                     <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
-                                    <img src="./assets/img/reform_img.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
                             <div class="p-reform-achieve__hading">
@@ -426,7 +426,7 @@
                                 <picture>
                                     <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png">
                                     <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png">
-                                    <img src="./assets/img/reform_img.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
                             <div class="p-reform-achieve__hading">
@@ -442,7 +442,7 @@
                                 <picture>
                                     <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
                                     <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/reform_img.png" alt="">
-                                    <img src="./assets/img/reform_img.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/reform_img.png" alt="">
                                 </picture>
                             </p>
                             <div class="p-reform-achieve__hading">
@@ -754,7 +754,7 @@
         <div class="l-footer__inner">
             <div class="l-footer__nav">
                 <a href="/" class="l-footer__logo">
-                    <img src="./assets/img/logo.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
                 </a>
                 <div class="l-footer__links">
                     <div class="l-footer__link-item">

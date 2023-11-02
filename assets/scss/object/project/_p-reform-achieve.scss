@@ -65,6 +65,7 @@
             margin-right: auto;
             display: grid;
             grid-template-columns: calc(140 / 393 * 100vw) 1fr;
+            grid-template-rows: calc((40 / 393) * 100vw) calc((80 / 393) * 100vw);
             text-decoration: none;
             background-color: #fff;
             & + &{
@@ -80,7 +81,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px calc((15 / 393) * 100vw);
+            padding: 10px;
         }
         &__date{
             font-size: unquote('min(calc((12 / 393) * 100vw), 12px)');
@@ -88,8 +89,7 @@
         }
         &__cont{
             grid-row: 2 / 3;
-            max-height: calc((80 / 393) * 100vw);
-            padding: 10px calc((15 / 393) * 100vw);
+            padding: 10px;
             border-top: 2px dotted #C9C9C9;
             font-size: unquote('min(calc((13 / 393) * 100vw), 13px)');
             line-height: calc(20/13);
@@ -133,7 +133,7 @@
         &__cont{
             padding: 24px;
             border-top: 2px dotted #C9C9C9;
-            font-size: unquote('max(calc((20 / 1366) * 100vw), 20px)');
+            font-size: unquote('max(calc((15 / 1366) * 100vw), 15px)');
             line-height: calc(24/15);
         }
         

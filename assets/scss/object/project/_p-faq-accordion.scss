@@ -15,7 +15,7 @@
         }
         &__ttl{
             padding-left: 24px;
-            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-size: 16px;
             font-weight: bold;
             color: #111;
             position: relative;
@@ -38,7 +38,7 @@
                 display: inline-block;
                 width: 14px;
                 height: 14px;
-                font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+                font-size: 16px;
                 font-weight: bold;
                 color: #27509B;
                 position: absolute;
@@ -65,7 +65,7 @@
             &::before{
                 content: "A";
                 display: inline-block;
-                font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+                font-size: 16px;
                 font-weight: bold;
                 color: #9B2727;
                 line-height: calc(20/15);
@@ -80,7 +80,7 @@
             }
         }
         &__txt{
-            font-size: unquote('min(calc((14 / 1366) * 100vw), 14px)');
+            font-size: 14px;
             color: #656565;
             line-height: calc(20/15);
             & + &{
@@ -177,7 +177,8 @@
 
 @media #{$break_point_tab}{
     .p-faq-accordion{
-        width: 755px;
+        max-width: 755px;
+        min-width: 100%;
         margin-left: auto;
         margin-right: auto;
         &__item{

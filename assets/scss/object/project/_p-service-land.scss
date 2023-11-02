@@ -17,7 +17,7 @@
             box-sizing: border-box;
         }
         &__ttl{
-            font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
+            font-size: 15px;
             font-weight: bold;
             line-height: calc(22/15);
             text-align: center;
@@ -40,7 +40,7 @@
             width: calc((287 / 393) * 100vw);
             margin-left: auto;
             margin-right: auto;
-            padding: calc((20 / 393) * 100vw);
+            padding: 20px;
             border: 1px solid #D1D1D1;
             box-sizing: border-box;
 
@@ -49,7 +49,7 @@
             }
         }
         &__ttl{
-            font-size: calc((14 / 393) * 100vw);
+            font-size: min(calc((13 / 393) * 100vw), 13px);
             font-weight: bold;
             line-height: calc(22/15);
             text-align: center;
@@ -75,7 +75,7 @@
             box-sizing: border-box;
         }
         &__ttl{
-            font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
+            font-size: max(calc((13 / 1366) * 100vw), 13px);
             font-weight: bold;
             line-height: calc(22/15);
             text-align: center;

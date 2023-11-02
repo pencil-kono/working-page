@@ -63,13 +63,13 @@
             display: flex;
             flex-direction: column;
             & + &{
-                margin-top: 24px;
+                margin-top: 16px;
             }
 
             &--column2{
                 &-item{
                     & + &{
-                        margin-top: 24px;
+                        margin-top: 16px;
                     }
                 }
             }
@@ -85,7 +85,7 @@
             margin-top: 8px;
         }
         &__radio-group{
-            margin-top: 20px;
+            margin-top: 8px;
         }
         &__radio-item{
             & + &{
@@ -96,7 +96,8 @@
             margin-top: 8px;
         }
         &__submit{
-            width: calc((280 / 393) * 100vw);
+            width: 100%;
+            max-width: 280px;
             margin-top: 40px;
             margin-left: auto;
             margin-right: auto;
@@ -111,13 +112,13 @@
             display: flex;
             flex-direction: column;
             & + &{
-                margin-top: 24px;
+                margin-top: 16px;
             }
 
             &--column2{
                 &-item{
                     & + &{
-                        margin-top: 24px;
+                        margin-top: 16px;
                     }
                 }
             }
@@ -126,14 +127,14 @@
         }
         &__input{
             width: 100%;
-            margin-top: 24px;
+            margin-top: 8px;
         }
         &__select{
             width: 100%;
-            margin-top: 24px;
+            margin-top: 8px;
         }
         &__radio-group{
-            margin-top: 20px;
+            margin-top: 8px;
         }
         &__radio-item{
             & + &{
@@ -141,7 +142,7 @@
             }
         }
         &__textarea{
-            margin-top: 24px;
+            margin-top: 8px;
         }
         &__submit{
             width: 280px;

@@ -71,9 +71,9 @@
         display: flex;
         align-items: center;
         box-sizing: border-box;
-        padding: calc((20 / 393) * 100vw) 0 calc((20 / 393) * 100vw) calc((70 / 393) * 100vw);
+        padding: 20px 0 20px 70px;
         border-radius: 50px;
-        font-size: unquote('min(calc((16 / 393) * 100vw), 16px)');
+        font-size: 16px;
         font-weight: bold;
         text-decoration: none;
         border: none;
@@ -88,16 +88,16 @@
             border-right: solid 2px #111;
             border-radius: 2px;
             position: absolute;
-            left: calc((40 / 393) * 100vw );
+            left: 40px;
             top: 38%;
             transform: rotate(-45deg) translateY(50%);
         }
         &--black{
             color: #fff;
             background-color: #111;
-            padding: 20px 0 20px calc((90 / 393) * 100vw);
+            padding: 20px 0 20px 70px;
             &::after{
-                left: calc((60 / 393) * 100vw );
+                left: 40px;
                 border-bottom: solid 2px #fff;
                 border-right: solid 2px #fff;
             }

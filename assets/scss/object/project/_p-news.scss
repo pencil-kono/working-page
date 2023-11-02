@@ -38,17 +38,21 @@
             & + &{
                 margin-top: 20px;
             }
+        }
+        &__date{
+            width: 100%;
+            color: #656565;
             text-decoration: none;
             &:hover{
                 text-decoration: underline;
             }
         }
-        &__date{
-            width: 100%;
-            color: #656565;
+        &__name{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
-        &__name{}
-
     }
 }
 
