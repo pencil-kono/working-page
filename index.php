@@ -55,12 +55,11 @@
 </head>
 
 <body>
-
-
     <header class="l-header show">
         <div class="l-header__inner">
             <a href="/" class="l-header__logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+                <h1 class="l-header__logo-txt">世田谷区・大田区密着の<br class="sp_only">リフォーム・リノベーションチーム</h1>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="TATENOリフォーム">
             </a>
             <div class="l-header__links pc_only">
                 <p class="l-header__links-item l-header__links-item--mail">
@@ -114,14 +113,14 @@
                     <picture>
                         <source type="image/jpg" media="(min-width:769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/fv.jpg">
                         <source type="image/jpg" media="(max-width:768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/fv.jpg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fv.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fv.jpg" alt="地域密着だから現地調査0円 大田区と世田谷区 地域密着だから小回りが効くリフォーム屋です">
                     </picture>
                 </p>
                 <p class="p-fv__ttl">
                     <picture>
                         <source type="image/png" media="(min-width:769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/fv_title.png">
                         <source type="image/png" media="(max-width:768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/fv_title.png">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fv_title.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fv_title.png" alt="大田区と世田谷区 地域密着だから小回りが効くリフォーム屋です">
                     </picture>
                 </p>
                 <p class="p-fv__icon">
@@ -191,7 +190,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_01.png">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_01.png">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_01.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_01.png" alt="提案力">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">提案力</p>
@@ -202,7 +201,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_02.png">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_02.png">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_02.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_02.png" alt="材料仕入れ力">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">材料仕入れ力</p>
@@ -213,7 +212,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_03.jpg" alt="リフォーム力">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">リフォーム力</p>
@@ -224,7 +223,7 @@
                             <picture>
                                 <source type="image/png" media="(min-width:1025px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_04.png">
                                 <source type="image/png" media="(max-width:1024px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sp/kodawari_img_04.png">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_04.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kodawari_img_04.png" alt="末永いお付き合い力">
                             </picture>
                         </p>
                         <p class="p-kodawari-grid-list__ttl">末永い<br class="sp_only">お付き合い力</p>
@@ -277,17 +276,17 @@
                     <div class="p-service-land__list">
                         <div class="p-service-land__item">
                             <p class="p-service-land__ttl">
-                                相続で受け取った<br class="pc_only">不動産・土地の<br>活用方法を知りたい！
+                                相続で受け取った<br class="pc_only tab_only">不動産・土地の<br>活用方法を知りたい！
                             </p>
                         </div>
                         <div class="p-service-land__item">
                             <p class="p-service-land__ttl">
-                                離婚して不要になった<br class="pc_only">不動産・土地の<br>活用方法を知りたい！
+                                離婚して不要になった<br class="pc_only tab_only">不動産・土地の<br>活用方法を知りたい！
                             </p>
                         </div>
                         <div class="p-service-land__item">
                             <p class="p-service-land__ttl">
-                                転勤して不要になった<br class="pc_only">不動産・土地の<br>活用方法を知りたい！
+                                転勤して不要になった<br class="pc_only tab_only">不動産・土地の<br>活用方法を知りたい！
                             </p>
                         </div>
                     </div>
@@ -565,7 +564,7 @@
                 <div class="p-faq__list p-faq-accordion">
                     
                     <div class="p-faq-accordion__item">
-                        <p class="p-faq-accordion__ttl active">初回見積もりから金額が<br class="sp_only">変わることがありますか？</p>
+                        <p class="p-faq-accordion__ttl active">初回見積もりから金額が変わることがありますか？</p>
                         <div class="p-faq-accordion__cont active">
                             <p class="p-faq-accordion__txt">築年数などによって変わることがございます。具体的には「排水管」や「ブレーカーの残数」などの状況によって変わります。</p>
                         </div>
@@ -622,10 +621,12 @@
 
                     <div class="p-contact-form__links">
                         <p class="p-contact-form__links-item">
-                            <a href="#" class="p-contact-form__links-button c-button c-button--line c-button--big">LINEで気軽に相談</a>
+                            <a href="#" class="p-contact-form__links-button c-button c-button--line c-button--big">
+                                <span class="c-button--big-txt">LINEで気軽に相談</span>
+                            </a>
                         </p>
                         <p class="p-contact-form__links-item">
-                            <a href="#" class="p-contact-form__links-button c-button c-button--tel">TEL: 080-1292-7104</a>
+                            <a href="#" class="p-contact-form__links-button c-button c-button--tel c-button--big">TEL: 080-1292-7104</a>
                         </p>
                     </div>
 
@@ -754,7 +755,7 @@
         <div class="l-footer__inner">
             <div class="l-footer__nav">
                 <a href="/" class="l-footer__logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="TATENOリフォーム">
                 </a>
                 <div class="l-footer__links">
                     <div class="l-footer__link-item">

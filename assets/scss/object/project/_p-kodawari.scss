@@ -3,12 +3,13 @@
 @media #{$break_point_pc}{
     .p-kodawari{
         width: calc(1020 / 1366 * 100vw);
+        max-width: 1020px;
         margin-left: auto;
         margin-right: auto;
         &__inner{
             display: grid;
-            grid-template-columns: calc((100 / 1366) * 100vw) calc((840 / 1366) * 100vw);
-            column-gap: calc((70 / 1366) * 100vw);
+            grid-template-columns: unquote('min(calc((100 / 1366) * 100vw), 100px)') unquote('min(calc((848 / 1366) * 100vw), 848px)');
+            column-gap: unquote('min(calc((72 / 1366) * 100vw), 72px)');
         }
     }
 }
@@ -18,7 +19,7 @@
         margin-left: 16px;
         margin-right: 16px;
         &__items{
-            margin-top: 25px;
+            margin-top: 24px;
         }
     }
 }
@@ -28,7 +29,7 @@
         margin-left: 40px;
         margin-right: 40px;
         &__items{
-            margin-top: 25px;
+            margin-top: 24px;
         }
     }
 }

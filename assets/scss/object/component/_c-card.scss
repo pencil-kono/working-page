@@ -3,7 +3,7 @@
 @media #{$break_point_pc}{
     .c-card{
         width: 100%;
-        padding: calc((15 / 1366) * 100vw);
+        padding: 16px;
         text-decoration: none;
         text-align: center;
         border-radius: 5px;
@@ -12,7 +12,7 @@
         position: relative;
         transition: all 0.3s;
         &__name{
-            font-size: unquote('min(calc((15 / 1366) * 100vw), 15px)');
+            font-size: 15px;
             font-weight: bold;
         }
         &::after{
@@ -38,8 +38,11 @@
 
 @media #{$break_point_sp}{
     .c-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        padding: calc((15 / 393) * 100vw) 0 calc((17 / 393) * 100vw) 0;
+        padding: 16px;
         text-decoration: none;
         text-align: center;
         border-radius: 5px;
@@ -67,14 +70,14 @@
 @media #{$break_point_tab}{
     .c-card{
         width: 100%;
-        padding: calc((15 / 1366) * 100vw);
+        padding: 16px;
         text-decoration: none;
         text-align: center;
         border-radius: 5px;
         background-color: #fff;
         position: relative;
         &__name{
-            font-size: unquote('max(calc((15 / 1366) * 100vw), 15px)');
+            font-size: 15px;
             font-weight: bold;
             color: #111;
         }

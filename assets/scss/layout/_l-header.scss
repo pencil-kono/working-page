@@ -13,16 +13,29 @@
         &__inner{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             width: calc(1020 / 1366 * 100vw);
+            max-width: 1020px;
             margin-left: auto;
             margin-right: auto;
         }
         &__logo{
             display: flex;
-            align-items: center;
-            width: calc(230 / 1366 * 100vw);
+            flex-direction: column;
+            row-gap: 4px;
+            align-items: flex-start;
+            max-width: 324px;
+            text-decoration: none;
             &:hover{
                 opacity: 0.7;
+            }
+            img{
+                width: calc(231 / 1366 * 100vw);
+                max-width: 231px;
+            }
+            &-txt{
+                font-size: 12px;
+                font-weight: normal;
             }
         }
         &__links{
@@ -32,12 +45,15 @@
         &__links-item{
             &--mail{
                 width: calc(164 / 1366 * 100vw);
+                max-width: 164px;
             }
             &--line{
                 width: calc(154 / 1366 * 100vw);
+                max-width: 154px;
             }
             &--tel{
                 width: calc(184 / 1366 * 100vw);
+                max-width: 184px;
             }
         }
     }
@@ -61,14 +77,25 @@
         &__inner{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             width: 100vw;
             margin-left: 16px;
             margin-right: 16px;
         }
         &__logo{
             display: flex;
-            align-items: center;
-            width: calc(187 / 393 * 100vw);
+            flex-direction: column;
+            row-gap: 4px;
+            align-items: flex-start;
+            text-decoration: none;
+            img{
+                width: calc(191 / 393 * 100vw);
+                max-width: 191px;
+            }
+            &-txt{
+                font-size: 12px;
+                font-weight: normal;
+            }
         }
         &__links{
         }
@@ -95,14 +122,25 @@
         &__inner{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             width: 100vw;
             margin-left: 40px;
             margin-right: 40px;
         }
         &__logo{
             display: flex;
-            align-items: center;
-            width: 187px;
+            flex-direction: column;
+            row-gap: 4px;
+            align-items: flex-start;
+            text-decoration: none;
+            img{
+                width: calc(191 / 393 * 100vw);
+                max-width: 191px;
+            }
+            &-txt{
+                font-size: 12px;
+                font-weight: normal;
+            }
         }
         &__links{
         }

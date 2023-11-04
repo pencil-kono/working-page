@@ -3,7 +3,10 @@
 @media #{$break_point_pc}{
 
     .c-vertical-ttl{
+        max-width: 100px;
         font-size: unquote('min(calc((32 / 1366) * 100vw), 32px)');
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        letter-spacing: 0.2em;
         font-weight: bold;
         line-height: calc(50/32);
         writing-mode: vertical-rl;

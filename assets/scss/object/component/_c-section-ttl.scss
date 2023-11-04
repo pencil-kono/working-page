@@ -1,8 +1,12 @@
 @use "../../common/mixin";
 
+.c-section-ttl{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
 @media #{$break_point_pc}{
     .c-section-ttl{
-        font-size: unquote('min(calc((32 / 1366) * 100vw), 32px)');
+        font-size: 32px;
         font-weight: bold;
         color: #111;
         line-height: calc(48/32);

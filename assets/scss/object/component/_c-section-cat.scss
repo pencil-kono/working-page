@@ -2,7 +2,8 @@
 
 @media #{$break_point_pc}{
     .c-section-cat{
-        font-size: unquote('min(calc((12 / 1366) * 100vw), 12px)');
+        line-height: 2;
+        font-size: 10px;
         text-align: center;
         color: #111;
     }
@@ -10,6 +11,7 @@
 
 @media #{$break_point_sp}{
     .c-section-cat{
+        line-height: 2;
         font-size: unquote('min(calc((10 / 393) * 100vw), 10px)');
         text-align: center;
         color: #111;
@@ -18,7 +20,8 @@
 
 @media #{$break_point_tab}{
     .c-section-cat{
-        font-size: unquote('max(calc((12 / 1366) * 100vw), 12px)');
+        line-height: 2;
+        font-size: 10px;
         text-align: center;
         color: #111;
     }

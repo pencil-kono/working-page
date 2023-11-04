@@ -1,16 +1,29 @@
 @use "../../common/mixin";
 
+.p-news{
+    &__cont{
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+    &__date{
+        color: #656565;
+        &:visited{
+            color: #656565;
+        }
+    }
+}
+
 @media #{$break_point_pc}{
     .p-news{
         width: calc( 868 / 1366 * 100vw);
+        max-width: 868px;
+        padding: 16px;
         border: 8px solid #F7F7F7;
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
-        padding: calc(20 / 1366 * 100vw);
         &__inner{
             display: grid;
-            grid-template-columns: calc((180 / 1366) * 100vw) 1fr;
+            grid-template-columns: 160px 1fr;
             column-gap: 30px;
         }
         &__left{
@@ -23,7 +36,7 @@
             }
         }
         &__ttl{
-            font-size: unquote('min(calc((26 / 1366) * 100vw), 26px)');
+            font-size: 26px;
             font-weight: bold;
         }
         &__right{
@@ -31,12 +44,12 @@
         }
         &__cont{
             display: grid;
-            grid-template-columns: calc((80 / 1366) * 100vw) 1fr;
+            grid-template-columns: 72px 1fr;
             column-gap: 24px;
-            font-size: unquote('min(calc((14 / 1366) * 100vw), 14px)');
+            font-size: 14px;
             line-height: calc(21/14);
             & + &{
-                margin-top: 20px;
+                margin-top: 8px;
             }
         }
         &__date{
@@ -66,7 +79,7 @@
             border: 8px solid #F7F7F7;
             box-sizing: border-box;
             margin-top: 50px;
-            padding: calc(20 / 393 * 100vw);
+            padding: 20px 16px;
         }
         &__left{
             display: none;
@@ -98,7 +111,6 @@
 }
 
 @media #{$break_point_tab}{
-
     .p-news{
         border: 8px solid #F7F7F7;
         box-sizing: border-box;
@@ -136,7 +148,7 @@
             font-size: unquote('max(calc((14 / 1366) * 100vw), 14px)');
             line-height: calc(21/14);
             & + &{
-                margin-top: 20px;
+                margin-top: 8px;
             }
         }
         &__date{
@@ -144,7 +156,6 @@
             color: #656565;
         }
         &__name{
-            
         }
     }
 

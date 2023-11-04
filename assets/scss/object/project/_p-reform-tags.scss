@@ -5,10 +5,12 @@
         &__list{
             display: grid;
             grid-template-columns: repeat(5, 1fr);
+            // grid-template-columns: repeat(auto-fit, minmax(194px, 1fr));
             gap: 10px;
         }
         &__item{
-            width: 196px;
+            // width: calc(196 / 1366 * 100vw);
+            // max-width: 196px;
         }
     }
 }

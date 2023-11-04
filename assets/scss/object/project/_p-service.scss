@@ -2,7 +2,8 @@
 
 @media #{$break_point_pc}{
     .p-service{
-        width: 1020px;
+        width: calc(1020 / 1366 * 100vw);
+        max-width: 1020px;
         margin-left: auto;
         margin-right: auto;
         &__reform{
@@ -26,10 +27,10 @@
             margin-top: 20px;
         }
         &__land{
-            margin-top: 30px;
+            margin-top: 32px;
         }
         &__info{
-            margin-top: 40px;
+            margin-top: 32px;
         }
     }
 

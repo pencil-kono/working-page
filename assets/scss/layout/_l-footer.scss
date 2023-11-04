@@ -6,7 +6,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 960px;
+            width: calc((960/1366)*100vw);
+            max-width: 960px;
             margin-left: auto;
             margin-right: auto;
             padding: 50px 0;
@@ -25,7 +26,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             column-gap: 80px;
-            row-gap: 20px;
+            row-gap: 16px;
         }
         &__link-item{
             padding-left: 20px;
@@ -44,18 +45,18 @@
         &__link{
             display: inline-block;
             text-decoration: none;
-            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-size: 16px;
             font-weight: bold;
             &:hover{
                 text-decoration: underline;
             }
         }
         &__copyright{
-            padding: 15px 0;
+            padding: 16px 0;
             background-color: #111;
             color: #fff;
             text-align: center;
-            font-size: unquote('min(calc((12 / 1366) * 100vw), 12px)');
+            font-size: 12px;
         }
     }
 }
@@ -65,7 +66,7 @@
         &__inner{
         }
         &__nav{
-            padding: calc(50 / 393 * 100vw) 0;
+            padding: 60px 0;
             background-color: #fff;
         }
         &__logo{
@@ -80,11 +81,11 @@
         }
         &__links{
             width: calc(190 / 393 * 100vw);
-            margin-top: calc(40 / 393 * 100vw);
+            margin-top: 24px;
             margin-left: auto;
             margin-right: auto;
             display: flex;
-            row-gap: calc(22 / 393 * 100vw);
+            row-gap: 16px;
             flex-direction: column;
         }
         &__link-item{
@@ -123,13 +124,13 @@
 @media #{$break_point_tab}{
     .l-footer{
         &__nav{
-            padding: calc(50 / 393 * 100vw) 0;
+            padding: 60px 0;
             background-color: #fff;
         }
         &__logo{
             display: flex;
             align-items: center;
-            width: 50vw;
+            width: 40vw;
             margin-left: auto;
             margin-right: auto;
             &:hover{
@@ -137,12 +138,12 @@
             }
         }
         &__links{
-            width: calc(190 / 393 * 100vw);
-            margin-top: calc(40 / 393 * 100vw);
+            width: 30vw;
+            margin-top: 24px;
             margin-left: auto;
             margin-right: auto;
             display: flex;
-            row-gap: calc(22 / 393 * 100vw);
+            row-gap: 16px;
             flex-direction: column;
         }
         &__link-item{

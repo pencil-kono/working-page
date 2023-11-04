@@ -17,6 +17,7 @@
             top: 40px;
             color: #fff;
             font-size: unquote('min(calc((30 / 1366) * 100vw), 30px)');
+            font-weight: bold;
             &::before{
                 content: "";
                 width: 27px;
@@ -29,12 +30,13 @@
         }
         &__desc{
             width: calc((382 / 1366) * 100vw);
-            min-height: 151px;
-            height: calc((151 / 1366) * 100vw);
-            padding: calc((24 / 1366) * 100vw);
+            max-width: 382px;
+            min-height: 160px;
+            height: auto;
+            padding: 24px 24px 16px 24px;
             background-color: #fff;
             border-radius: 5px;
-            font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
+            font-size: 16px;
             line-height: calc(24/16);
             position: absolute;
             left: 50%;
@@ -50,23 +52,25 @@
         &__item{
             position: relative;
             & + &{
-                margin-top: 18px;
+                margin-top: 16px;
             }
         }
         &__ttl{
             padding-left: calc((40 / 393) * 100vw);
             position: absolute;
             left: calc((12 / 393) * 100vw);
-            top: calc((40 / 393) * 100vw);
+            top: calc((32 / 393) * 100vw);
             color: #fff;
             font-size:  unquote('min(calc((30 / 393) * 100vw), 30px)');
+            font-weight: bold;
+            line-height: 1.4;
             &::before{
                 content: "";
                 width: calc((27 / 393) * 100vw);
                 height: 1px;
                 background-color: #fff;
                 position: absolute;
-                top: calc((12 / 393) * 100vw);
+                top: 3vw;
                 left: 0;
             }
         }
@@ -96,29 +100,32 @@
             position: relative;
         }
         &__ttl{
-            padding-left: calc((40 / 1366) * 100vw);
+            padding-left: 4.6vw;
             position: absolute;
             left: calc((15 / 1366) * 100vw);
             top: calc((40 / 1366) * 100vw);
             color: #fff;
-            font-size: unquote('min(calc((30 / 1366) * 100vw), 30px)');
+            font-size: unquote('max(calc((30 / 1366) * 100vw), 30px)');
+            font-weight: bold;
             &::before{
                 content: "";
-                width: calc((27 / 1366) * 100vw);
+                width: 27px;
                 height: 1px;
                 background-color: #fff;
                 position: absolute;
-                top: calc((12 / 1366) * 100vw);
+                top: 12px;
                 left: 0;
             }
         }
         &__desc{
             width: calc((590 / 1366) * 100vw);
-            height: calc((150 / 1366) * 100vw);
+            min-height: 20vw;
+            min-height: 151px;
+            box-sizing: border-box;
             padding: calc((24 / 1366) * 100vw);
             background-color: #fff;
             border-radius: 5px;
-            font-size: unquote('min(calc((20 / 1366) * 100vw), 20px)');
+            font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
             line-height: calc(24/16);
             position: absolute;
             left: 50%;

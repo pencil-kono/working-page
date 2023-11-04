@@ -5,12 +5,13 @@
         background-color: #F7F7F7;
         padding: 80px 0;
         &__inner{
-            width: 1020px;
+            width: calc(1020 / 1366 * 100vw);
+            max-width: 1020px;
             margin-left: auto;
             margin-right: auto;
         }
         &__form{
-            margin-top: 60px;
+            margin-top: 40px;
         }
         &__links{
             margin-top: 60px;
@@ -30,7 +31,7 @@
             margin-right: 16px;
         }
         &__form{
-            margin-top: 60px;
+            margin-top: 32px;
         }
         &__links{
             margin-top: 60px;
@@ -50,7 +51,7 @@
             margin-right: 40px;
         }
         &__form{
-            margin-top: 60px;
+            margin-top: 32px;
         }
         &__links{
             margin-top: 60px;

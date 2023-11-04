@@ -4,7 +4,7 @@
     .p-section-heading{
         &--marker{
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 8px;
             &::after{
                 content: "";
                 width: 35px;
@@ -23,10 +23,11 @@
     .p-section-heading{
         &--marker{
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 8px;
             &::after{
                 content: "";
                 width: calc((35 / 393) * 100vw);
+                max-width: 35px;
                 height: 2px;
                 background-color: #F2A700;
                 position: absolute;
@@ -42,7 +43,7 @@
     .p-section-heading{
         &--marker{
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 8px;
             &::after{
                 content: "";
                 width: 35px;

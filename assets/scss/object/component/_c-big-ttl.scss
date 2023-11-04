@@ -1,5 +1,11 @@
 @use "../../common/mixin";
 
+.c-big-ttl{
+    &__txt{
+        font-family: "Arial", "メイリオ";
+    }
+}
+
 @media #{$break_point_pc}{
     .c-big-ttl{
         height: calc((82 / 1366) * 100vw);
@@ -9,10 +15,10 @@
             align-items: flex-end;
         }
         &__txt{
-            font-size: unquote('min(calc((16 / 1366) * 100vw), 16px)');
+            font-size: 16px;
             font-weight: bold;
             &--big{
-                font-size: unquote('min(calc((66 / 1366) * 100vw), 66px)');
+                font-size: unquote('min(calc((88 / 1366) * 100vw), 88px)');
             }
             &--yellow{
                 color: #F2A700;
@@ -23,7 +29,6 @@
 
 @media #{$break_point_sp}{
     .c-big-ttl{
-        height: calc((82 / 393) * 100vw);
         &--row2{
             display: flex;
             flex-direction: column;
@@ -51,9 +56,10 @@
             align-items: flex-end;
         }
         &__txt{
+            font-size: 16px;
             font-weight: bold;
             &--big{
-                font-size: unquote('min(calc((66 / 1366) * 100vw), 66px)');
+                font-size: unquote('min(calc((88 / 1366) * 100vw), 88px)');
             }
             &--yellow{
                 color: #F2A700;

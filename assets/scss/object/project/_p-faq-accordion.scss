@@ -8,7 +8,7 @@
         &__item{
             border: 1px solid #D1D1D1;
             border-radius: 2px;
-            padding: 20px;
+            padding: 20px 60px 20px 20px;
             & + &{
                 margin-top: 8px;
             }
@@ -17,6 +17,7 @@
             padding-left: 24px;
             font-size: 16px;
             font-weight: bold;
+            line-height: calc(20/15);
             color: #111;
             position: relative;
             &::after{
@@ -28,7 +29,7 @@
                 border-right: solid 3px #F2A700;
                 border-radius: 2px;
                 position: absolute;
-                right: 0;
+                right: -40px;
                 top: -50%;
                 transform: rotate(45deg) translateY(50%);
                 transition: all 0.2s;
@@ -48,7 +49,7 @@
             &.active{
                 &::after{
                     top: 50%;
-                    right: 0.8vw;
+                    right: calc(0.8vw - 40px);
                     transform: rotate(225deg) translateY(50%);
                 }
             }
@@ -75,7 +76,7 @@
             }
             &.active{
                 opacity: 1;
-                margin-top: 20px;
+                margin-top: 12px;
                 height: auto
             }
         }
@@ -84,7 +85,7 @@
             color: #656565;
             line-height: calc(20/15);
             & + &{
-                margin-top: 20px;
+                margin-top: 16px;
             }
         }
     }
@@ -96,7 +97,7 @@
         &__item{
             border: 1px solid #D1D1D1;
             border-radius: 2px;
-            padding: 18px calc((16 / 393) * 100vw);
+            padding: 16px calc((60 / 393) * 100vw) 16px calc((16 / 393) * 100vw);
             & + &{
                 margin-top: 8px;
             }
@@ -127,14 +128,14 @@
                 border-radius: 2px;
                 position: absolute;
                 top: 0vw;
-                right: 1vw;
+                right: calc(4vw - ((60 / 393) * 100vw));
                 transform: rotate(45deg);
                 transition: all 0.2s;
             }
             &.active{
                 &::after{
                     top: 2vw;
-                    right: 0.8vw;
+                    right: calc(3.8vw - ((60 / 393) * 100vw));
                     transform: rotate(225deg);
                 }
             }
@@ -150,7 +151,7 @@
             transition: opacity 0.2s, height 0.2s, margin-top 0.2s;
             &.active{
                 opacity: 1;
-                margin-top: calc((16 / 393) * 100vw);
+                margin-top: 8px;
                 height: auto;
             }
             &::before{
@@ -184,7 +185,7 @@
         &__item{
             border: 1px solid #D1D1D1;
             border-radius: 2px;
-            padding: 20px;
+            padding: 20px 60px 20px 20px;
             & + &{
                 margin-top: 8px;
             }
@@ -204,7 +205,7 @@
                 border-right: solid 3px #F2A700;
                 border-radius: 2px;
                 position: absolute;
-                right: 0;
+                right: -40px;
                 top: -50%;
                 transform: rotate(45deg) translateY(50%);
                 transition: all 0.2s;
@@ -224,7 +225,7 @@
             &.active{
                 &::after{
                     top: 50%;
-                    right: 0.8vw;
+                    right: calc(-40px + 0.8vw);
                     transform: rotate(225deg) translateY(50%);
                 }
             }
@@ -251,7 +252,7 @@
             }
             &.active{
                 opacity: 1;
-                margin-top: 20px;
+                margin-top: 8px;
                 height: auto
             }
         }
@@ -260,7 +261,7 @@
             color: #656565;
             line-height: calc(20/15);
             & + &{
-                margin-top: 20px;
+                margin-top: 16px;
             }
         }
     }

@@ -6,14 +6,14 @@
             position: relative;
         }
         &__txt{
-            margin-top: 20px;
+            margin-top: 16px;
             font-size: 16px;
             line-height: calc(32/16);
             text-align: center;
         }
         &__img{
             width: 190px;
-            margin-top: 20px;
+            margin-top: 16px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -26,14 +26,14 @@
             position: relative;
         }
         &__txt{
-            margin-top: 20px;
+            margin-top: 24px;
             font-size: unquote('max(calc((16 / 1366) * 100vw), 16px)');
             line-height: calc(32/16);
             text-align: center;
         }
         &__img{
             width: 190px;
-            margin-top: 20px;
+            margin-top: 24px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -48,14 +48,14 @@
             position: relative;
         }
         &__txt{
-            margin-top: 20px;
+            margin-top: 24px;
             font-size: unquote('min(calc((16 / 393) * 100vw), 16px)');
             line-height: calc(32/16);
             text-align: center;
         }
         &__img{
             width: calc((195 / 393) * 100vw);
-            margin-top: 30px;
+            margin-top: 24px;
             margin-left: auto;
             margin-right: auto;
         }

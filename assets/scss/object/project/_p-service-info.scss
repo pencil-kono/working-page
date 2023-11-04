@@ -7,13 +7,15 @@
         position: relative;
         &::after{
             content: "";
-            height: 48px;
-            width: 70px;
+            width: calc((72 / 1366) * 100vw);
+            max-width: 72px;
+            height: calc((30 / 1366) * 100vw);
+            max-height: 30px;
             clip-path: polygon(0 0, 100% 0, 50% 100%);
             background-color: #F7F7F7;
             position: absolute;
-            left: 130px;
-            top: -32px;
+            left: min(calc((36 / 393) * 100vw), 130px);
+            top: max(calc((-10 / 393) * 100vw), -32px);
         }
         &__inner{
             display: flex;
@@ -22,15 +24,16 @@
             padding: 20px;
         }
         &__ttl{
-            font-size: unquote('min(calc((18 / 1366) * 100vw), 18px)');
+            font-size: 18px;
             font-weight: bold;
             line-height: calc(30/18);
         }
         &__cont{
-            width: 736px;
+            width: calc((736 / 1366) * 100vw);
+            max-width: 736px;
             padding: 24px;
             background-color: #fff;
-            font-size: unquote('min(calc((13.6 / 1366) * 100vw), 14px)');
+            font-size: 14px;
             line-height: calc(26/14);
             &--bold{
                 font-weight: bold;
@@ -57,7 +60,7 @@
         &__cont{
             width: calc((334 / 393) * 100vw);
             margin-top: 15px;
-            padding: calc((20 / 393) * 100vw);
+            padding: 16px;
             background-color: #fff;
             font-size: unquote('min(calc((14 / 393) * 100vw), 14px)');
             line-height: calc(26/14);
